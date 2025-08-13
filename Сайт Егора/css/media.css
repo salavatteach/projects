@@ -1,10 +1,12 @@
  @media (max-width:1440px) {
 
      .hero_top {
-         background: url(../image/decor/Group49.png) center bottom / cover no-repeat;
+         background: url(../image/decor/hero-bg.webp) center bottom / cover no-repeat;
      }
 
-
+     .service-right .oferta_text {
+         right: -65px;
+     }
  }
 
 
@@ -47,6 +49,10 @@
          display: none;
      }
 
+      .service-right .oferta_text {
+         right: -32px;
+     }
+
 
      .error_inner-main {
          padding: 50px;
@@ -73,8 +79,8 @@
      }
 
 
-     .main {
-         padding-top: 74px;
+     main {
+         padding-top: 62px;
      }
 
      .header_inner {
@@ -102,6 +108,10 @@
          display: none;
      }
 
+     .scrolled .header_right-btn {
+         display: none;
+     }
+
      .cookie_wrapper {
          border-radius: 18px 18px 0 0;
          left: 0;
@@ -124,6 +134,10 @@
          width: 100%;
          height: 100%;
          box-shadow: none;
+     }
+
+     .scrolled .header_dropdown {
+         top: 60px;
      }
 
      .header_dropdown-left {
@@ -405,7 +419,7 @@
      }
 
 
-   
+
 
 
      .service_head-ic {
@@ -523,6 +537,120 @@
          flex-direction: column;
      }
 
+
+     /********************************************/
+     .portfolio_hero-top {
+         background: url(../image/decor/portfolio-bg-mb.webp) 30% center / cover no-repeat;
+     }
+
+     .portfolio_hero-inner {
+         align-items: start;
+         padding: 0 8px;
+     }
+
+     .potfolio_title {
+         font-weight: 600;
+         text-align: left;
+         letter-spacing: 0;
+     }
+
+     .portfolio_archive-inner {
+         margin: 72px 0;
+     }
+
+     .portfolio_archive-list {
+         gap: 40px;
+     }
+
+     .portfolio_card-img {
+         border-radius: 18px;
+     }
+
+     .portfolio_card-img::after {
+         border-radius: 18px;
+     }
+
+     .portfolio_card-content {
+         padding: 16px 8px;
+         gap: 4px;
+     }
+
+     .portfolio_card-title {
+         max-width: 49vw;
+     }
+
+     .posrtfolio_btn-wrap {
+         margin: 40px 8px 0;
+     }
+
+     /****************************************************/
+
+     .article_header {
+         margin-top: 24px;
+         padding: 0 8px;
+     }
+
+     .article__title {
+         text-align: left;
+         font-size: 40px;
+     }
+
+     .article__excerpt {
+         margin-top: 24px;
+         text-align: left;
+     }
+
+     .text {
+         margin-bottom: 100px;
+     }
+
+     .text img {
+         border-radius: 18px;
+         margin: 40px 0;
+     }
+
+     .text ul, .text p {
+         margin: 15px 0;
+         padding: 0 8px;
+     }
+
+     .text figure {
+         gap: 70px;
+         margin: 40px 0;
+         border-radius: 18px;
+     }
+
+     .text figcaption {
+         font-size: 20px;
+     }
+
+     .text figcaption::after {
+         bottom: -50px;
+         left: 45%;
+         height: 35px;
+         width: 35px;
+         background: url(../image/icons/Star-tall.svg) center;
+     }
+
+     .text figure img {
+         max-width: 65vw;
+     }
+
+
+     .text blockquote {
+         padding: 16px;
+         height: 70vw;
+         margin: 40px 0;
+         border-radius: 18px;
+     }
+
+     .text blockquote p {
+         font-size: 2.5vw;
+     }
+
+     .text blockquote cite span, .text blockquote cite {
+         font-size: 2vw;
+     }
  }
 
  @media (max-width:450px) {
@@ -539,5 +667,39 @@
      .error_back {
          padding: 20px 24px 18px;
          margin: -12px 16px 0;
+     }
+
+     .portfolio_hero-top {
+         background: url(../image/decor/portfolio-bg-mb.webp) center center / cover no-repeat;
+         height: 180vw;
+     }
+
+     .potfolio_title {
+         font-size: 40px;
+         margin-top: 24px;
+     }
+
+     .portfolio_card-title {
+         max-width: 79vw;
+     }
+
+
+     .text figcaption {
+         font-size: 3vw;
+     }
+
+     .text figcaption::after {
+         bottom: -50px;
+         left: 45%;
+         height: 35px;
+         width: 35px;
+         background: url(../image/icons/Star-tall.svg) center;
+     }
+ }
+
+
+ @media (max-width: 350px) {
+     .hero_top-title span::before {
+         display: none;
      }
  }

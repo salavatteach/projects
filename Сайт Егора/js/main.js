@@ -1,5 +1,16 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+            document.body.classList.add('scrolled');
+        } else {
+            document.body.classList.remove('scrolled');
+        }
+    });
+
+
+
     const menuBtn = document.querySelector('.menu_btn');
     const dropdownShort = document.querySelector('.header_dropdown');
     const dropdown = document.querySelector('.header');
@@ -103,12 +114,10 @@ document.querySelectorAll('.ask_accord-item').forEach(item => {
         const tooltipWidth = tooltip.offsetWidth;
         const tooltipHeight = tooltip.offsetHeight;
 
-        let x = e.clientX - 75;
+        let x = e.clientX - tooltipWidth / 2;
         let y = e.clientY - tooltipHeight - 10;
 
-        // левая граница
         if (x < 0) x = 0;
-        // правая граница
         if (x + tooltipWidth > window.innerWidth) {
             x = window.innerWidth - tooltipWidth;
         }

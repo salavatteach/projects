@@ -14,6 +14,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 24px 0;
+    position: relative;
+
 }
 
 .header_logo {
@@ -22,7 +24,7 @@
     gap: 12px;
     font-family: var(--second-family);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 140%;
 
 }
@@ -36,8 +38,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    position: relative;
-
 }
 
 
@@ -53,7 +53,6 @@
     line-height: 150%;
     letter-spacing: -0.01em;
     transition: var(--transition);
-    color:var(--general-black);
 }
 
 .header_tg-link:hover,
@@ -62,6 +61,7 @@
     color: #f60;
 }
 
+.header_right-btn path,
 .header_tg-link path,
 .header_email-link path {
     transition: var(--transition);
@@ -73,14 +73,55 @@
     display: none;
 }
 
-.menu_btn span {
-    background: url(../image/icons/ic-burger.svg);
-    width: 19px;
-    height: 16px;
+.scrolled .header_right-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    color: var(--general-black);
     transition: var(--transition);
+}
+
+.scrolled .header_center-btn {
+    margin-left: 135px;
+}
+
+
+.scrolled .header_dropdown {
+    top: 92px;
+}
+
+.header_right-btn svg {
+    display: none;
 
 }
 
+.scrolled .header_right-btn svg {
+    display: flex;
+}
+
+.scrolled .header_right-btn:hover {
+    color: #f60;
+}
+
+.scrolled .header_right-btn:hover path {
+    fill: #f60;
+}
+
+.menu_btn span {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu_btn span path {
+    transition: var(--transition);
+}
+
+
+.menu_btn:hover span path,
 .header_tg-link:hover path,
 .header_email-link:hover path {
     fill: #f60;
@@ -97,18 +138,24 @@
     color: var(--grey-text);
 }
 
+.header-menu--active .menu_btn span svg {
+    display: none;
+}
+
 .header-menu--active .menu_btn span {
-    background: url(../image/icons/ic-invers-chekmark.svg);
-    width: 13px;
+    background: url(../image/icons/ic-invers-chekmark.svg) no-repeat;
+    width: 19px;
     height: 8px;
 }
+
+/*************************************************************/
 
 
 .header_dropdown {
     display: flex;
     position: absolute;
-    top: 67px;
-    left: -75%;
+    top: 105px;
+    left: 12%;
     z-index: 10;
     border-radius: 28px;
     width: max-content;
@@ -149,9 +196,9 @@
 }
 
 .dropdown_left-link img {
-    width: 23px;
-    margin-top: 16px;
-    margin-left: 16px;
+    width: 35px;
+    margin-top: 22px;
+    margin-left: 11px;
 }
 
 
@@ -230,6 +277,7 @@
 
 .nav_menu-list a {
     transition: var(--transition);
+    padding: 6px 10px 6px 0;
 }
 
 .header_dropdown-contacts {
@@ -260,7 +308,7 @@
 .hero_top {
     margin-top: 40px;
     background:
-        url(../image/decor/Group49.png) center bottom / contain no-repeat,
+        url(../image/decor/hero-bg.webp) center bottom / contain no-repeat,
         radial-gradient(50% 100% at 181.96% 0%, #fffaea 0%, #fdfcf2 100%);
 }
 
@@ -1081,6 +1129,4 @@
     font-size: 16px;
     line-height: 150%;
     color: var(--grey-text);
-
 }
-
