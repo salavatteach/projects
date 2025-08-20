@@ -1,0 +1,299 @@
+.service_archive {
+    height: 740px;
+    padding: 100px 0 29px;
+    background: url(../image/decor/service-archive.webp) center center / contain;
+}
+
+.service_archive-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    height: 100%;
+    position: relative;
+}
+
+
+.service_archive-title {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--general-white);
+    margin-bottom: 16px;
+}
+
+.service_archive-descript {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--general-white);
+
+}
+
+.service_archive-bottom {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.archive_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 40px;
+    padding: 32px;
+    max-width: 486px;
+    width: 100%;
+    height: 279px;
+}
+
+.archive_left {
+    background: url(../image/decor/archive-design.webp) center center / cover no-repeat,
+        linear-gradient(180deg, #fdfcf2 0%, rgba(255, 255, 255, 0.16) 100%);
+}
+
+.archive_right {
+    background: url(../image/decor/archive-sait.webp) center center / cover no-repeat,
+        linear-gradient(180deg, #170800 0%, #2c1706 100%);
+
+}
+
+.archive_card-top {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+
+
+.archive_card-title {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 4px;
+    transition: var(--transition);
+
+}
+
+.archive_card-text {
+    font-family: var(--first-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    transition: var(--transition);
+
+}
+
+.archive_show {
+    font-family: var(--first-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+}
+
+.archive_right .archive_card-title,
+.archive_right .archive_card-text,
+.archive_right .archive_show {
+    color: var(--general-white);
+}
+
+.archive_right .archive_show {
+    margin-left: auto;
+}
+
+.archive_card:hover .archive_card-title {
+    color: #f60;
+}
+
+.archive_right .archive_card-top path {
+    fill: var(--general-white);
+    transition: var(--transirion);
+}
+
+.archive_card .archive_card-top path {
+    transition: var(--transition);
+}
+
+.archive_card:hover .archive_card-top path {
+    fill: #f60;
+}
+
+
+.service_archive-circle {
+    position: absolute;
+    bottom: -113px;
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(253, 252, 242, 1) 50%, rgba(130, 123, 113, 1) 50%, rgba(25, 13, 3, 1) 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service_archive-circle img {
+    width: 26px;
+    margin: 70px 0 0 47px;
+}
+
+.circle_wrap {
+    background: url(../image/icons/icon1-web.webp) center center / 70% no-repeat, #fdfcf2;
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+}
+
+
+/***************************************************************/
+
+.message {
+    padding: 108px 0 140px;
+}
+
+.message_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+
+
+.message_top-title {
+    text-align: center;
+    max-width: 764px;
+}
+
+.message_inner-main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    border-radius: 64px;
+    width: 100%;
+    padding: 76px 76px 80px;
+    background:
+        linear-gradient(180deg, #f5f0e3 0%, rgba(245, 240, 227, 0) 100%),
+        url(../image/decor/Union.svg) center center / contain no-repeat;
+}
+
+.message_inner-main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(to bottom, #f60 0%, #ffd6c200 70%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+
+
+.message_main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 72px;
+}
+
+.message_face {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 24px;
+    border-radius: 100px;
+    padding: 18px 54px 18px 18px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.08), 0 0 1px 0 rgba(0, 0, 0, 0.24);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0.3) 100%);
+    border: 1px solid var(--general-white);
+
+}
+
+.message_face::before {
+    content: '';
+    position: absolute;
+    width: 545px;
+    height: 188px;
+}
+
+.message_face span {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.message_face-title {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 4px;
+}
+
+.message_face-text {
+    font-family: var(--first-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+}
+
+.message_back,
+.message_main {
+    font-family: var(--first-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    padding: 6px 36px 18px;
+    box-shadow: 0px 0px 30px 20px rgb(198 198 198 / 30%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%);
+    border-radius: 0 0 32px 32px;
+}
+
+.message_main {
+    backdrop-filter: blur(40px);
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.08);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%);
+    opacity: 0.7;
+    border: 1px solid var(--general-white);
+
+}
+
+.message_back {
+    backdrop-filter: blur(40px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%);
+    opacity: 0.5;
+    color: #000;
+}
+
+.message_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.message_tg-btn {
+    background-color: #111;
+}
+
+.message_email-btn {
+    font-family: var(--first-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--grey-text);
+}
