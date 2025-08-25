@@ -1,0 +1,315 @@
+.portfolio_hero-top {
+    background: url(../image/decor/portfolio-bg.webp) center center / cover no-repeat;
+    height: 740px;
+}
+
+
+.portfolio_hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.potfolio_title {
+    font-family: var(--second-family);
+    color: var(--general-white);
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.portfolio_descript {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--general-white);
+}
+
+
+
+
+.portfolio_archive-inner {
+    margin: 140px 0 72px;
+}
+
+.portfolio_archive-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+
+.portfolio_card-img,
+.portfolio_archive-item {
+    width: 100%;
+}
+
+.portfolio_card-content,
+.portfolio_archive-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+
+.portfolio_card-img {
+    border-radius: 28px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio_card-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid #000;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    border-radius: 28px;
+}
+
+.portfolio_card-img img {
+    width: 100%;
+    transition: var(--transition);
+}
+
+
+.portfolio_archive-card:hover .portfolio_card-img img {
+    transform: scale(1.15);
+    z-index: 5;
+}
+
+.portfolio_card-content {
+    max-width: 492px;
+    padding: 26px;
+    gap: 4px;
+}
+
+
+.portfolio_card-title {
+    display: inline-block;
+    max-width: 356px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    transition: var(--transition);
+}
+
+.portfolio_archive-card:hover .portfolio_card-title {
+    color: #f60;
+}
+
+.portfolio_card-descript {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: var(--first-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--grey-text);
+}
+
+.posrtfolio_btn-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 764px;
+    gap: 72px;
+    margin: 98px auto 0;
+}
+
+.show_more-btn {
+    font-family: var(--first-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    width: 100%;
+    border: 1px solid var(--general-black);
+    background: radial-gradient(50% 100% at 181.96% 0%, #fffaea 0%, #fdfcf2 100%);
+    box-shadow: none;
+    color: var(--general-black);
+    padding: 16px;
+    border-radius: 28px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.show_more-btn:hover {
+    border: 1px solid #a4490c;
+    color: #a4490c;
+}
+
+.show_more-btn:active {
+    border: 1px solid #7d390c;
+    color: #7d390c;
+}
+
+/*****************************************************************/
+
+.article {
+    background: linear-gradient(180deg, #fbf5e7 0%, #fdfcf2 100%);
+}
+
+.article_header {
+    margin: 72px 0 0;
+}
+
+.article__title {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+.article__excerpt {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    margin-top: 16px;
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 56px 0 140px;
+    gap: 24px;
+}
+
+.text a {
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.text a:hover {
+    text-decoration: none;
+    color: #f60;
+}
+
+.text ul,
+.text p {
+    font-family: var(--first-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    max-width: 764px;
+    width: 100%;
+}
+
+
+.text img {
+    position: relative;
+    width: 100%;
+    border-radius: 28px;
+    margin: 48px 0;
+}
+
+.text img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid #000;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    border-radius: 28px;
+}
+
+.text ul li {
+    list-style: disc;
+    margin-left: 35px;
+}
+
+
+
+.text blockquote {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    background: url(../image/icons/ic-quote.svg) 94% 89% / 35% no-repeat,
+        radial-gradient(circle at top left, rgba(255, 223, 128, 0.25) 0%, transparent 50%),
+        radial-gradient(circle at bottom right, rgba(255, 223, 128, 0.25) 0%, transparent 50%),
+        #fdf9f0;
+    padding: 40px;
+    height: 738px;
+    width: 100%;
+    border-radius: 28px;
+    margin: 72px 0;
+}
+
+.text blockquote p {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 154%;
+}
+
+.text blockquote cite span,
+.text blockquote cite {
+    font-family: var(--first-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    font-style: normal;
+}
+
+.text blockquote cite span {
+    color: var(--grey-text);
+}
+
+.text figure {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 130px;
+    padding: 40px 40px 0;
+    background-color: #f5f0e3;
+    border-radius: 28px;
+    margin: 72px 0;
+    width: 100%;
+}
+
+.text figure img {
+    margin: 0;
+    border-radius: 0;
+    max-width: 649px;
+}
+
+.text figcaption {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 154%;
+    text-align: center;
+    max-width: 682px;
+    position: relative;
+}
+
+.text figcaption::after {
+    content: '';
+    position: absolute;
+    bottom: -95px;
+    left: 45%;
+    height: 70px;
+    width: 70px;
+    background: url(../image/icons/Star-tall.svg);
+}
