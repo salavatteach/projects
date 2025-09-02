@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>monisensa</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/swiper-bundle.css">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/home.css">
+    </head>
+    <body class="body">
+        <div class="wrapper">
+            <header class="header section_wht">
+                <div class="header_inner">
+                    <a href="#" class="header_logo">
+                        <img src="./image/icon/main-logo.svg" alt="logo">
+                    </a>
+                    <div class="header_center">
+                        <nav class="header_menu">
+                            <ul class="nav_list">
+                                <li class="nav_list-item current-menu-item">
+                                    <a href="">О технологии</a>
+                                </li>
+                                <li class="nav_list-item">
+                                    <a href="">Приложение</a>
+                                </li>
+                                <li class="nav_list-item">
+                                    <a href="">Контакты</a>
+                                </li>
+                                <li class="nav_list-item">
+                                    <a href="">Помощь</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="language-switcher" aria-label="Language selector">
+                            <button class="language-switcher__toggle" aria-haspopup="listbox" aria-expanded="false">
+                                <img src="./image/icon/ic-rus.webp" alt="" class="language-switcher__flag">
+                                <span>Switch language</span>
+                                <svg
+                                    width="10"
+                                    height="5"
+                                    viewBox="0 0 10 5"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path d="M0 0L5 5L10 0H0Z" fill="#261000" style="fill:#261000;fill:color(display-p3 0.1506 0.0628 0.0000);fill-opacity:1;"/>
+                                </svg>
+                            </button>
+                            <ul class="language-switcher__list" role="listbox" tabindex="-1">
+                                <li role="option" aria-selected="true">
+                                    <a href="#" lang="ru">
+                                        <img src="./image/icon/ic-rus.webp" alt="">
+                                        Русский
+                                    </a>
+                                </li>
+                                <li role="option" aria-selected="false">
+                                    <a href="#" lang="en">
+                                        <img src="./image/icon/ic-usa.webp" alt="">
+                                        English
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a href="#" class="social_btn">
+                        <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M10.04 0C4.58005 0 0.130049 4.45 0.130049 9.91C0.130049 11.66 0.590049 13.36 1.45005 14.86L0.0500488 20L5.30005 18.62C6.75005 19.41 8.38005 19.83 10.04 19.83C15.5 19.83 19.9501 15.38 19.9501 9.92C19.9501 7.27 18.92 4.78 17.05 2.91C15.18 1.03 12.69 0 10.04 0ZM10.05 1.67C12.25 1.67 14.31 2.53 15.87 4.09C17.42 5.65 18.2801 7.72 18.2801 9.92C18.2801 14.46 14.58 18.15 10.04 18.15C8.56005 18.15 7.11005 17.76 5.85005 17L5.55005 16.83L2.43005 17.65L3.26005 14.61L3.06005 14.29C2.24005 13 1.80005 11.47 1.80005 9.91C1.81005 5.37 5.50005 1.67 10.05 1.67ZM6.53005 5.33C6.37005 5.33 6.10005 5.39 5.87005 5.64C5.65005 5.89 5.00005 6.5 5.00005 7.71C5.00005 8.93 5.89005 10.1 6.00005 10.27C6.14005 10.44 7.76005 12.94 10.25 14C10.84 14.27 11.3 14.42 11.66 14.53C12.25 14.72 12.79 14.69 13.22 14.63C13.7 14.56 14.68 14.03 14.89 13.45C15.1 12.87 15.1 12.38 15.04 12.27C14.97 12.17 14.81 12.11 14.56 12C14.31 11.86 13.09 11.26 12.87 11.18C12.64 11.1 12.5 11.06 12.31 11.3C12.15 11.55 11.67 12.11 11.53 12.27C11.38 12.44 11.24 12.46 11 12.34C10.74 12.21 9.94005 11.95 9.00005 11.11C8.26005 10.45 7.77005 9.64 7.62005 9.39C7.50005 9.15 7.61005 9 7.73005 8.89C7.84005 8.78 8.00005 8.6 8.10005 8.45C8.23005 8.31 8.27005 8.2 8.35005 8.04C8.43005 7.87 8.39005 7.73 8.33005 7.61C8.27005 7.5 7.77005 6.26 7.56005 5.77C7.36005 5.29 7.16005 5.35 7.00005 5.34C6.86005 5.34 6.70005 5.33 6.53005 5.33Z" fill="white" style="fill:white;fill-opacity:1;"/>
+                        </svg>
+                        Написать в WhataApp
+                    </a>
+                </div>
+            </header>
+            <main class="main">
+                <section class="hero section_wht">
+                    <div class="container">
+                        <div class="hero_top">
+                            <h1 class="hero_title first_title">Всего один датчик, чтобы следить за электроприборами в доме</h1>
+                            <a href="#" class="hero_play-btn">
+                                <span>Смотреть видео</span>
+                                <div class="play_btn-wrap blue_element">
+                                    <img src="./image/icon/ic-play-white.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hero_main">
+                            <div class="hero_slider swiper">
+                                <ul class="hero_slider__wrapper swiper-wrapper">
+                                    <li class="hero_slider__slide swiper-slide">
+                                        <img src="./image/img/img-slide.webp" alt="">
+                                    </li>
+                                    <li class="hero_slider__slide swiper-slide">
+                                        <img src="./image/img/img-slide.webp" alt="">
+                                    </li>
+                                    <li class="hero_slider__slide swiper-slide">
+                                        <img src="./image/img/img-slide.webp" alt="">
+                                    </li>
+                                   
+                                </ul>
+                                <div class="hero_slider__pagination"></div>
+                            </div>
+                            <div class="hero_slider-nav">
+                                    <button class="hero_slider__button-prev">
+                                        <img src="./image/icon/ic-arrow.svg" alt="">
+                                    </button>
+                                    <button class="hero_slider__button-next">
+                                        <img src="./image/icon/ic-arrow.svg" alt="">
+                                    </button>
+                                </div>
+                            <div class="hero_main-btn">
+                                <a href="#" class="sensor_btn blue_element">
+                                    <div class="sensor_btn-content">
+                                        Датчик AI Wi-Fi Ваттметр
+                                        <div class="sensor_price-wrap">
+                                            <img src="./image/icon/ic-green.png">
+                                            4 990₽
+                                            <span>9 990₽</span>
+                                        </div>
+                                        <span>Купить сейчас</span>
+                                    </div>
+                                    <div class="sencor_btn-img">
+                                        <img src="./bg-blue-card.png" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="apps_btn">
+                                    <div class="apps_btn-content">
+                                        Посмотрите как работает приложение до покупки
+                                        <span>Скачать приложение</span>
+                                    </div>
+                                    <div class="apps_btn-img"><img src="./Group14.png" alt=""></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer_top">
+                    <div class="container">
+                        <div class="footer_top-inner">
+                            <div class="footer_top-img-wrapp">
+                                <img class="footer_img-main" src="./image/img/img-footer-arm.webp" alt="">
+                                <div class="footer_img-badge">
+                                    <img src="./image/img/img-footer-beig.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="footer_top-content">
+                                <div class="footer_content-head">
+                                    <h2 class="footer_title second_title">Закажите датчик сегодня и озаботьтесь о своём спокойствии и безопасности близких</h2>
+                                    <p class="footer_descript descript">Всего одно устройство следит за всем</p>
+                                </div>
+                                <ul class="footer_btn-list">
+                                    <li class="footer_btn-item">
+                                        <a href="#" class="footer_btn blue_element">
+                                            <span>9 990₽</span>
+                                            4900₽
+                                            <img src="" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="footer_btn-item">
+                                        <a href="#" class="footer_btn">
+                                            <span></span>
+                                            <img src="./image/icon/ozon-logo.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="footer_btn-item">
+                                        <a href="#" class="footer_btn">
+                                            <span></span>
+                                            <img src="./image/icon/wb-logo.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_main">
+                    <div class="container">
+                        <div class="footer_main-inner">
+                            <a href="#" class="footer_main-logo">
+                                <img src="./image/icon/sl-logo.svg" alt="">
+                            </a>
+                            <ul class="footer_rights-list">
+                                <li class="footer_rights-item">© 2023–2024. Все права защищены</li>
+                                <li class="footer_rights-item">ООО «МОНИСЕНСА РАЗРАБОТКА»</li>
+                                <li class="footer_rights-item">
+                                    <a href="#">Обработка персональных данных</a>
+                                </li>
+                            </ul>
+                            <ul class="footer_info-list">
+                                <li class="footer_info-item">ИНН: 5262393830</li>
+                                <li class="footer_info-item">КПП: 772101001</li>
+                                <li class="footer_info-item">г. Москва, вн.тер.г. Муниципальный округ Некрасовка, ул. Маресьева, д. 7, к. 4, кв. 116</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="container">
+                        <div class="footer_bottom-inner">
+                            <a href="#" class="footer_bottom-logo">
+                                <img src="./image/icon/fond-logo.svg" alt="fond">
+                            </a>
+                            <p class="footer_descript descript">
+                                Проект создан при поддержке Федерального государственного бюджетного  учреждения «Фонд содействия 
+                                развитию малых форм предприятий в научно-технической сфере в рамках программы «Студенческий стартап»  
+                                федерального проекта «Платформа университетского технологического предпринимательства»
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="./js/swiper-bundle.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
