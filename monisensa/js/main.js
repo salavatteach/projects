@@ -129,34 +129,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* модалка секции SENSOR */
 
-  const popup = document.querySelector('.sensor_popup');
-  const popupContent = popup.querySelector('.sensor_popup-wrapper');
-  const closeBtn = popup.querySelector('.sensor-close');
-  const triggers = document.querySelectorAll('.sensor_btn-item, .sensor_ask');
-  triggers.forEach(trigger => {
-    trigger.addEventListener('click', () => {
-      const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-      document.body.style.overflow = 'hidden';
-      document.body.style.paddingRight = scrollBarWidth + 'px';
-      popup.classList.add('sensor-open');
-    });
+const sensorPopup = document.querySelector('.sensor_popup');
+const sensorPopupContent = sensorPopup.querySelector('.sensor_popup-wrapper');
+const sensorCloseBtn = sensorPopup.querySelector('.sensor-close');
+
+function closeSensorPopup() {
+  sensorPopup.classList.remove('sensor-open');
+  document.body.style.overflow = '';
+  document.body.style.paddingRight = '';
+}
+
+document.querySelectorAll('.sensor_btn-item, .sensor_ask').forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.overflow = 'hidden';
+    document.body.style.paddingRight = scrollBarWidth + 'px';
+    sensorPopup.classList.add('sensor-open');
   });
-  function closePopup() {
-    popup.classList.remove('sensor-open');
-    document.body.style.overflow = '';
-    document.body.style.paddingRight = '';
+});
+
+sensorCloseBtn.addEventListener('click', closeSensorPopup);
+
+sensorPopup.addEventListener('click', (e) => {
+  if (!sensorPopupContent.contains(e.target)) {
+    closeSensorPopup();
   }
-  closeBtn.addEventListener('click', closePopup);
-  popup.addEventListener('click', (e) => {
-    if (!popupContent.contains(e.target)) {
-      closePopup();
-    }
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      closePopup();
-    }
-  });
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeSensorPopup();
+  }
+});
 
 
 
@@ -353,4 +357,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 });
+
 
