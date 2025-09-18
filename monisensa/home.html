@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>monisensa</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/swiper-bundle.css">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/home.css">
+        <link rel="stylesheet" href="./css/media.css">
+    </head>
+    <body class="body">
+        <div class="wrapper">
+            <header class="header section_wht">
+                <div class="header_inner">
+                    <a href="#" class="header_logo logo-pc">
+                        <img src="./image/icon/main-logo.svg" alt="logo">
+                    </a>
+                    <a href="#" class="header_logo logo-mb">
+                        <img src="./image/icon/logo-mb.svg" alt="logo">
+                    </a>
+                    <div class="header_center">
+                        <div class="menu_title">
+                            <h5>Меню</h5>
+                            <button class="dropdow-menu-close">
+                                &times;
+                            </button>
+                        </div>
+                        <nav class="header_menu">
+                            <ul class="nav_list">
+                                <li class="nav_list-item current-menu-item">
+                                    <a href="">О технологии</a>
+                                </li>
+                                <li class="nav_list-item">
+                                    <a href="">Приложение</a>
+                                </li>
+                                <li class="nav_list-item">
+                                    <a href="">Контакты</a>
+                                </li>
+                                <li class="nav_list-item">
+                                    <a href="">Помощь</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="language-switcher" aria-label="Language selector">
+                            <button class="language-switcher__toggle" aria-haspopup="listbox" aria-expanded="false">
+                                <img src="./image/icon/ic-rus.webp" alt="" class="language-switcher__flag">
+                                <span>Switch language</span>
+                                <svg
+                                    width="10"
+                                    height="5"
+                                    viewBox="0 0 10 5"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path d="M0 0L5 5L10 0H0Z" fill="#261000" style="fill:#261000;fill:color(display-p3 0.1506 0.0628 0.0000);fill-opacity:1;"/>
+                                </svg>
+                            </button>
+                            <ul class="language-switcher__list" role="listbox" tabindex="-1">
+                                <li role="option" aria-selected="true">
+                                    <button lang="ru">
+                                        <img src="./image/icon/ic-rus.webp" alt="">
+                                        Русский
+                                    </button>
+                                </li>
+                                <li role="option" aria-selected="false">
+                                    <button lang="en">
+                                        <img src="./image/icon/ic-usa.webp" alt="">
+                                        English
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <a href="#" class="social_btn">
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M10.04 0C4.58005 0 0.130049 4.45 0.130049 9.91C0.130049 11.66 0.590049 13.36 1.45005 14.86L0.0500488 20L5.30005 18.62C6.75005 19.41 8.38005 19.83 10.04 19.83C15.5 19.83 19.9501 15.38 19.9501 9.92C19.9501 7.27 18.92 4.78 17.05 2.91C15.18 1.03 12.69 0 10.04 0ZM10.05 1.67C12.25 1.67 14.31 2.53 15.87 4.09C17.42 5.65 18.2801 7.72 18.2801 9.92C18.2801 14.46 14.58 18.15 10.04 18.15C8.56005 18.15 7.11005 17.76 5.85005 17L5.55005 16.83L2.43005 17.65L3.26005 14.61L3.06005 14.29C2.24005 13 1.80005 11.47 1.80005 9.91C1.81005 5.37 5.50005 1.67 10.05 1.67ZM6.53005 5.33C6.37005 5.33 6.10005 5.39 5.87005 5.64C5.65005 5.89 5.00005 6.5 5.00005 7.71C5.00005 8.93 5.89005 10.1 6.00005 10.27C6.14005 10.44 7.76005 12.94 10.25 14C10.84 14.27 11.3 14.42 11.66 14.53C12.25 14.72 12.79 14.69 13.22 14.63C13.7 14.56 14.68 14.03 14.89 13.45C15.1 12.87 15.1 12.38 15.04 12.27C14.97 12.17 14.81 12.11 14.56 12C14.31 11.86 13.09 11.26 12.87 11.18C12.64 11.1 12.5 11.06 12.31 11.3C12.15 11.55 11.67 12.11 11.53 12.27C11.38 12.44 11.24 12.46 11 12.34C10.74 12.21 9.94005 11.95 9.00005 11.11C8.26005 10.45 7.77005 9.64 7.62005 9.39C7.50005 9.15 7.61005 9 7.73005 8.89C7.84005 8.78 8.00005 8.6 8.10005 8.45C8.23005 8.31 8.27005 8.2 8.35005 8.04C8.43005 7.87 8.39005 7.73 8.33005 7.61C8.27005 7.5 7.77005 6.26 7.56005 5.77C7.36005 5.29 7.16005 5.35 7.00005 5.34C6.86005 5.34 6.70005 5.33 6.53005 5.33Z" fill="white"/>
+                    </svg>
+                    <span>Написать в</span>
+                    WhatsApp
+                </a>
+                <button class="header_dropdown-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
+            <main class="main">
+                <section class="hero section_wht">
+                    <div class="container">
+                        <div class="hero_top">
+                            <h1 class="hero_title first_title">Всего один датчик, чтобы следить за электроприборами в доме</h1>
+                            <button class="hero_play-btn video-pc">
+                                <span>Смотреть видео</span>
+                                <div class="play_btn-wrap blue_element">
+                                    <img src="./image/icon/ic-play-white.svg" alt="">
+                                </div>
+                            </button>
+                        </div>
+                        <div class="hero_main">
+                            <div class="hero_slider swiper">
+                                <ul class="hero_slider__wrapper swiper-wrapper">
+                                    <li class="hero_slider__slide swiper-slide slide-pc">
+                                        <img src="./image/img/img-slide.webp" alt="">
+                                    </li>
+                                    <li class="hero_slider__slide swiper-slide slide-pc">
+                                        <img src="./image/img/img-slide.webp" alt="">
+                                    </li>
+                                    <li class="hero_slider__slide swiper-slide slide-pc">
+                                        <img src="./image/img/img-slide.webp" alt="">
+                                    </li>
+                                    <li class="hero_slider__slide swiper-slide slide-mb">
+                                        <img src="./image/img/img-mb-hero-slide.webp" alt="">
+                                    </li>
+                                    <li class="hero_slider__slide swiper-slide slide-mb">
+                                        <img src="./image/img/img-mb-hero-slide.webp" alt="">
+                                    </li>
+                                    <li class="hero_slider__slide swiper-slide slide-mb">
+                                        <img src="./image/img/img-mb-hero-slide.webp" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hero_slider-nav">
+                                <button class="hero_slider__button-prev slider_prev">
+                                    <img src="./image/icon/ic-arrow.svg" alt="">
+                                </button>
+                                <div class="hero_slider__pagination"></div>
+                                <button class="hero_slider__button-next slider_next">
+                                    <img src="./image/icon/ic-arrow.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="hero_main-btn">
+                                <a href="#" class="sensor_btn blue_element">
+                                    <div class="sensor_btn-content">
+                                        Датчик AI Wi-Fi Ваттметр
+                                        <div class="sensor_price-wrap">
+                                            <img src="./image/icon/ic-green.png">
+                                            4 990₽
+                                            <span>9 990₽</span>
+                                        </div>
+                                        <span>Купить сейчас</span>
+                                    </div>
+                                    <div class="sencor_btn-img">
+                                        <img src="./image/img/img-blue-card.webp" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="apps_btn">
+                                    <div class="apps_btn-content">
+                                        Посмотрите как работает приложение до покупки
+                                        <span>Скачать приложение</span>
+                                    </div>
+                                    <div class="apps_btn-img">
+                                        <img src="./image/img/img-apps-card.webp" alt="">
+                                    </div>
+                                </a>
+                                <button class="hero_play-btn-mb">
+                                    <span>Смотреть видео</span>
+                                    <div class="play_btn-wrap-mb">
+                                        <img src="./image/icon/ic-play-white.svg" alt="">
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sensor">
+                    <div class="container">
+                        <div class="sensor_inner">
+                            <div class="sensor_img-pc">
+                                <img src="./image/img/img-sensor-phone.webp" alt="">
+                            </div>
+                            <div class="sensor_content">
+                                <h2 class="sensor_title second_title">
+                                    Датчик с помощью ИИ распознает особый электрический след приборов
+                                    <span>и следит за активностью электросети</span>
+                                </h2>
+                                <div class="sensor_img-mb">
+                                    <img src="./image/img/img-sensor-phone.webp" alt="">
+                                </div>
+                                <div class="sensor_btn-wrapper">
+                                    <div class="swiper sensor-swiper">
+                                        <ul class="swiper-wrapper sensor_btn-list">
+                                            <li class="swiper-slide sensor_btn-item">
+                                                <div class="sensor_slide-img blue_element">
+                                                    <img src="./image/icon/ic-fen.svg" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="swiper-slide sensor_btn-item">
+                                                <div class="sensor_slide-img blue_element">
+                                                    <img src="./image/icon/ic-heat-wave.svg" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="swiper-slide sensor_btn-item">
+                                                <div class="sensor_slide-img blue_element">
+                                                    <img src="./image/icon/ic-fridge.svg" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="swiper-slide sensor_btn-item">
+                                                <div class="sensor_slide-img blue_element">
+                                                    <img src="./image/icon/ic-washmashine.svg" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="swiper-slide sensor_btn-item">
+                                                <div class="sensor_slide-img blue_element">
+                                                    <img src="./image/icon/ic-mic-bakery.svg" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="swiper-slide sensor_btn-item">
+                                                <div class="sensor_slide-img blue_element">
+                                                    Еще
+                                                    <span>2</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="sensor_ask">
+                                        Какие приборы распознаёт ИИ?
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="application section_wht">
+                    <div class="container">
+                        <div class="application_inner">
+                            <h2 class="application_title first_title">Следите за потреблением и состоянием через приложение monisensa</h2>
+                            <div class="application_content">
+                                <div class="application_tabs swiper">
+                                    <ul class="application_tabs-list swiper-wrapper">
+                                        <li class="application_tabs-item swiper-slide">
+                                            <div class="application_item-img">
+                                                <img src="./image/img/apps-illustration-1.webp" alt="">
+                                            </div>
+                                            <div class="application_item-content">
+                                                <h3 class="application_item-title">Смотрите в реальном времени</h3>
+                                                <p class="application_item-descript descript">Отслеживайте статистику по каждому прибору и обращайте внимание на аномалии</p>
+                                            </div>
+                                            <div class="tab-progress">
+                                                <svg viewBox="0 0 36 36">
+                                                    <circle
+                                                        class="bg"
+                                                        cx="18"
+                                                        cy="18"
+                                                        r="16"
+                                                    ></circle>
+                                                    <circle
+                                                        class="progress"
+                                                        cx="18"
+                                                        cy="18"
+                                                        r="16"
+                                                    ></circle>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li class="application_tabs-item swiper-slide">
+                                            <div class="application_item-img">
+                                                <img src="./image/img/apps-illustration-2.webp" alt="">
+                                            </div>
+                                            <div class="application_item-content">
+                                                <h3 class="application_item-title">Экономьте на электроэнергии</h3>
+                                                <p class="application_item-descript descript">Укажите стоимость за Кв.ч. и отслеживайте сколько вы потратили энергии в рублях</p>
+                                            </div>
+                                            <div class="tab-progress">
+                                                <svg viewBox="0 0 36 36">
+                                                    <circle
+                                                        class="bg"
+                                                        cx="18"
+                                                        cy="18"
+                                                        r="16"
+                                                    ></circle>
+                                                    <circle
+                                                        class="progress"
+                                                        cx="18"
+                                                        cy="18"
+                                                        r="16"
+                                                    ></circle>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li class="application_tabs-item swiper-slide">
+                                            <div class="application_item-img">
+                                                <img src="./image/img/apps-illustration-3.webp" alt="">
+                                            </div>
+                                            <div class="application_item-content">
+                                                <h3 class="application_item-title">Подберите тариф потребления под себя</h3>
+                                                <p class="application_item-descript descript">На основе стиля жизни приложение предложит самый выгодный тариф оплаты электроэнергии</p>
+                                            </div>
+                                            <div class="tab-progress">
+                                                <svg viewBox="0 0 36 36">
+                                                    <circle
+                                                        class="bg"
+                                                        cx="18"
+                                                        cy="18"
+                                                        r="16"
+                                                    ></circle>
+                                                    <circle
+                                                        class="progress"
+                                                        cx="18"
+                                                        cy="18"
+                                                        r="16"
+                                                    ></circle>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                        <li class="application_tabs-item swiper-slide">
+                                            <div class="application_item-img">
+                                                <img src="./image/img/apps-illustration-4.webp" alt="">
+                                            </div>
+                                            <div class="application_item-content">
+                                                <h3 class="application_item-title">Подключайте несколько датчиков</h3>
+                                                <p class="application_item-descript descript">Следите за несколькими квартирами, офисами или домами в реальном времени</p>
+                                            </div>
+                                            <div class="tab-progress">
+                                                <svg viewBox="0 0 36 36">
+                                                    <circle
+                                                        class="bg"
+                                                        cx="18"
+                                                        cy="18"
+                                                        r="16"
+                                                    ></circle>
+                                                    <circle
+                                                        class="progress"
+                                                        cx="18"
+                                                        cy="18"
+                                                        r="16"
+                                                    ></circle>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="application_slider-nav">
+                                        <button class="application_button-prev slider_prev">
+                                            <img src="./image/icon/ic-arrow.svg" alt="">
+                                        </button>
+                                        <button class="application_button-next slider_next">
+                                            <img src="./image/icon/ic-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="application_tabs-img">
+                                    <ul class="application_img-list">
+                                        <li class="application_img-item apps-active">
+                                            <img src="./image/img/advantages.png" alt="">
+                                        </li>
+                                        <li class="application_img-item">
+                                            <img src="./image/img/advantages.png" alt="">
+                                        </li>
+                                        <li class="application_img-item">
+                                            <img src="./image/img/advantages.png" alt="">
+                                        </li>
+                                        <li class="application_img-item">
+                                            <img src="./image/img/advantages.png" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="controls">
+                    <div class="container">
+                        <div class="controls_inner">
+                            <h2 class="controls_title second_title">Для тех, кто хочет быть уверенным, что дома всё под контролем. Вы заботитесь — технология помогает</h2>
+                            <div class="controls_content">
+                                <ul class="controls_card-list">
+                                    <li class="controls_card-item" style="background: url(./image/backgr/controls-bg-1.webp) center center / cover no-repeat;">
+                                        <div class="contols_card-wrap">
+                                            <h3 class="controls_card-title">Для тех, кто беспокоится о безопасности</h3>
+                                            <p class="controls_card-descript">Всё под контролем. Вы знаете, что сейчас работает и забытый утюг перестанет тревожить</p>
+                                            <div class="controls_card-img">
+                                                <img src="./image/img/controls_img-1.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="controls_card-item" style="background: url(./image/backgr/controls-bg-2.webp) center center / cover no-repeat;">
+                                        <div class="contols_card-wrap">
+                                            <h3 class="controls_card-title">Для тех, кто хочет экономить, сохраняя комфорт</h3>
+                                            <p class="controls_card-descript">Вы видите потребление в рублях и получите предложение сменить тариф энергии в зависимости от стиля жизни</p>
+                                            <div class="controls_card-img">
+                                                <img src="./image/img/controls_img-2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="controls_card-item" style="background: url(./image/backgr/controls-bg-3.webp) center center / cover no-repeat;">
+                                        <div class="contols_card-wrap">
+                                            <h3 class="controls_card-title">Для родителей, чтобы следить за детьми или родственниками</h3>
+                                            <p class="controls_card-descript">Вы знаете чем сейчас пользуется ваш ребёнок дома и можете вовремя отреагировать на опасность</p>
+                                            <div class="controls_card-img">
+                                                <img src="./image/img/controls_img-3.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="controls_apps section_wht">
+                                    <div class="controls_apps-content">
+                                        <h2 class="controls_apps-title second_title">Скачайте приложение monisensa</h2>
+                                        <p class="controls_apps-descript descript">Отслеживайте статистику по каждому прибору и обращайте внимание на аномалии</p>
+                                        <div class="controls_apps-link">
+                                            <div class="controls_qr">
+                                                <img src="./image/img/controls-qr.webp" alt="">
+                                            </div>
+                                            <div class="controls_apps-btn">
+                                                <a href="#" class="controls_apps-demo blue_element">Получить демо доступ</a>
+                                                <a href="#" class="controls_apps-appstore">
+                                                    <img src="./image/icon/ic-apple.svg" alt="">
+                                                    AppStore
+                                                </a>
+                                                <a href="#" class="controls_apps-rustore">
+                                                    <img src="./image/icon/ic-rustore.svg" alt="">
+                                                    RuStore
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="controls_apps-img">
+                                        <img src="./image/img/img-finger.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="answer section_wht">
+                    <div class="container">
+                        <div class="answer_inner">
+                            <h2 class="answer_title first_title">Часто задаваемые вопросы</h2>
+                            <div class="answer_accord">
+                                <ul class="answer_accord-list">
+                                    <li class="answer_accord_item">
+                                        <button class="answer_accord-btn ">
+                                            <h4 class="answer_accord-title">Как работает Monisensa?</h4>
+                                            <p class="answer_accord-descript ">
+                                                Система способна распознавать большинство 
+                                                бытовых приборов: холодильники, стиральные машины, чайники, телевизоры, кондиционеры и др. 
+                                                Точность зависит от модели прибора и характера его энергопотребления.
+                                                <a>Список типов приборов.</a>
+                                            </p>
+                                        </button>
+                                        <button class="answer_open-btn">
+                                            <img src="./image/icon/ic-checkmark.svg">
+                                        </button>
+                                    </li>
+                                    <li class="answer_accord_item">
+                                        <button class="answer_accord-btn">
+                                            <h4 class="answer_accord-title">Какие устройства Monisensa может распознавать?</h4>
+                                            <p class="answer_accord-descript ">
+                                                Система способна распознавать большинство 
+                                                бытовых приборов: холодильники, стиральные машины, чайники, телевизоры, кондиционеры и др. 
+                                                Точность зависит от модели прибора и характера его энергопотребления. 
+                                                Список типов приборов.
+                                            </p>
+                                        </button>
+                                        <button class="answer_open-btn">
+                                            <img src="./image/icon/ic-checkmark.svg">
+                                        </button>
+                                    </li>
+                                    <li class="answer_accord_item">
+                                        <button class="answer_accord-btn">
+                                            <h4 class="answer_accord-title">Какие устройства Monisensa может распознавать?</h4>
+                                            <p class="answer_accord-descript ">
+                                                Система способна распознавать большинство 
+                                                бытовых приборов: холодильники, стиральные машины, чайники, телевизоры, кондиционеры и др. 
+                                                Точность зависит от модели прибора и характера его энергопотребления. 
+                                                Список типов приборов.
+                                            </p>
+                                        </button>
+                                        <button class="answer_open-btn">
+                                            <img src="./image/icon/ic-checkmark.svg">
+                                        </button>
+                                    </li>
+                                    <li class="answer_accord_item">
+                                        <button class="answer_accord-btn">
+                                            <h4 class="answer_accord-title">Нужно ли подключать каждый прибор отдельно?</h4>
+                                            <p class="answer_accord-descript ">
+                                                Система способна распознавать большинство 
+                                                бытовых приборов: холодильники, стиральные машины, чайники, телевизоры, кондиционеры и др. 
+                                                Точность зависит от модели прибора и характера его энергопотребления. 
+                                                Список типов приборов.
+                                            </p>
+                                        </button>
+                                        <button class="answer_open-btn">
+                                            <img src="./image/icon/ic-checkmark.svg">
+                                        </button>
+                                    </li>
+                                    <li class="answer_accord_item">
+                                        <button class="answer_accord-btn">
+                                            <h4 class="answer_accord-title">Какая польза от использования Monisensa?</h4>
+                                            <p class="answer_accord-descript ">
+                                                Система способна распознавать большинство 
+                                                бытовых приборов: холодильники, стиральные машины, чайники, телевизоры, кондиционеры и др. 
+                                                Точность зависит от модели прибора и характера его энергопотребления. 
+                                                Список типов приборов.
+                                            </p>
+                                        </button>
+                                        <button class="answer_open-btn">
+                                            <img src="./image/icon/ic-checkmark.svg">
+                                        </button>
+                                    </li>
+                                    <li class="answer_accord_item">
+                                        <button class="answer_accord-btn">
+                                            <h4 class="answer_accord-title">Можно ли использовать Monisensa в квартире или только в частных домах?</h4>
+                                            <p class="answer_accord-descript ">
+                                                Система способна распознавать большинство 
+                                                бытовых приборов: холодильники, стиральные машины, чайники, телевизоры, кондиционеры и др. 
+                                                Точность зависит от модели прибора и характера его энергопотребления. 
+                                                Список типов приборов.
+                                            </p>
+                                        </button>
+                                        <button class="answer_open-btn">
+                                            <img src="./image/icon/ic-checkmark.svg">
+                                        </button>
+                                    </li>
+                                    <li class="answer_accord_item">
+                                        <button class="answer_accord-btn">
+                                            <h4 class="answer_accord-title">Насколько безопасна установка Monisensa?</h4>
+                                            <p class="answer_accord-descript ">
+                                                Система способна распознавать большинство 
+                                                бытовых приборов: холодильники, стиральные машины, чайники, телевизоры, кондиционеры и др. 
+                                                Точность зависит от модели прибора и характера его энергопотребления. 
+                                                Список типов приборов.
+                                            </p>
+                                        </button>
+                                        <button class="answer_open-btn">
+                                            <img src="./image/icon/ic-checkmark.svg">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="answer_show-more">Больше вопросов и ответов</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer_top">
+                    <div class="container">
+                        <div class="footer_top-inner">
+                            <div class="footer_top-img-wrapp">
+                                <img class="footer_img-main" src="./image/img/img-footer-arm.webp" alt="">
+                                <div class="footer_img-badge">
+                                    <img src="./image/img/img-footer-beig.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="footer_top-content">
+                                <div class="footer_content-head">
+                                    <h2 class="footer_title second_title">Закажите датчик сегодня и озаботьтесь о своём спокойствии и безопасности близких</h2>
+                                    <p class="footer_descript descript">Всего одно устройство следит за всем</p>
+                                </div>
+                                <ul class="footer_btn-list">
+                                    <li class="footer_btn-item">
+                                        <a href="#" class="footer_btn blue_element">
+                                            <span>9 990₽</span>
+                                            4900₽
+                                            <img src="" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="footer_btn-item">
+                                        <a href="#" class="footer_btn">
+                                            <span></span>
+                                            <img src="./image/icon/ozon-logo.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="footer_btn-item">
+                                        <a href="#" class="footer_btn">
+                                            <span></span>
+                                            <img src="./image/icon/wb-logo.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_main">
+                    <div class="container">
+                        <div class="footer_main-inner">
+                            <a href="#" class="footer_main-logo">
+                                <img src="./image/icon/sl-logo.svg" alt="">
+                            </a>
+                            <ul class="footer_rights-list">
+                                <li class="footer_rights-item">© 2023–2024. Все права защищены</li>
+                                <li class="footer_rights-item">ООО «МОНИСЕНСА РАЗРАБОТКА»</li>
+                                <li class="footer_rights-item">
+                                    <a href="#">Обработка персональных данных</a>
+                                </li>
+                            </ul>
+                            <ul class="footer_info-list">
+                                <li class="footer_info-item">ИНН: 5262393830</li>
+                                <li class="footer_info-item">КПП: 772101001</li>
+                                <li class="footer_info-item">г. Москва, вн.тер.г. Муниципальный округ Некрасовка, ул. Маресьева, д. 7, к. 4, кв. 116</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="container">
+                        <div class="footer_bottom-inner">
+                            <a href="#" class="footer_bottom-logo">
+                                <img src="./image/icon/fond-logo.svg" alt="fond">
+                            </a>
+                            <p class="footer_descript descript">
+                                Проект создан при поддержке Федерального государственного бюджетного  учреждения «Фонд содействия 
+                                развитию малых форм предприятий в научно-технической сфере в рамках программы «Студенческий стартап»  
+                                федерального проекта «Платформа университетского технологического предпринимательства»
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="sensor_popup" id="sensorPopup">
+                <div class="sensor_popup-wrapper">
+                    <button class="sensor-close">&times;</button>
+                    <div class="sensor_popup-top">
+                        <h4 class="sensor_popup-title">Приборы, которые распознаёт ИИ</h4>
+                    </div>
+                    <div class="sensor_popup-main">
+                        <ul class="sensor_popup-list">
+                            <li class="sensor_popup-item">
+                                <div class="sensor_popup-img">
+                                    <img src="./image/icon/ic-fridge-2.svg" alt="">
+                                </div>
+                                <div class="sensor_popup-content">
+                                    <h5>Холодильник</h5>
+                                    <p class="descript">Также как социально-экономическое развитие является качественно новой ступенью дальнейших направлений развития!</p>
+                                </div>
+                            </li>
+                            <li class="sensor_popup-item">
+                                <div class="sensor_popup-img">
+                                    <img src="./image/icon/ic-fen-2.svg" alt="">
+                                </div>
+                                <div class="sensor_popup-content">
+                                    <h5>Фен</h5>
+                                    <p class="descript">Господа, разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение укрепления моральных ценностей.</p>
+                                </div>
+                            </li>
+                            <li class="sensor_popup-item">
+                                <div class="sensor_popup-img">
+                                    <img src="./image/icon/ic-heat-wave-2.svg" alt="">
+                                </div>
+                                <div class="sensor_popup-content">
+                                    <h5>Нагреватель</h5>
+                                    <p class="descript">
+                                        Повседневная практика показывает, что дальнейшее развитие различных форм деятельности 
+                                        представляет собой интересный эксперимент проверки стандартных подходов!
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="sensor_popup-item">
+                                <div class="sensor_popup-img">
+                                    <img src="./image/icon/ic-mic-bakery-2.svg" alt="">
+                                </div>
+                                <div class="sensor_popup-content">
+                                    <h5>Микроволновая печь</h5>
+                                    <p class="descript">Сложно сказать, почему ключевые особенности структуры проекта и по сей день остаются уделом либералов, которые жаждут быть призваны к ответу.</p>
+                                </div>
+                            </li>
+                            <li class="sensor_popup-item">
+                                <div class="sensor_popup-img">
+                                    <img src="./image/icon/ic-washmashine-2.svg" alt="">
+                                </div>
+                                <div class="sensor_popup-content">
+                                    <h5>Стиральная машина</h5>
+                                    <p class="descript">Как принято считать, тщательные исследования конкурентов будут ассоциативно распределены по отраслям.</p>
+                                </div>
+                            </li>
+                            <li class="sensor_popup-item">
+                                <div class="sensor_popup-img">
+                                    <img src="./image/icon/ic-coffemashine.svg" alt="">
+                                </div>
+                                <div class="sensor_popup-content">
+                                    <h5>Блендер</h5>
+                                    <p class="descript">Как принято считать, тщательные исследования конкурентов будут ассоциативно распределены по отраслям.</p>
+                                </div>
+                            </li>
+                            <li class="sensor_popup-item">
+                                <div class="sensor_popup-img">
+                                    <img src="./image/icon/ic-washmashine-2.svg" alt="">
+                                </div>
+                                <div class="sensor_popup-content">
+                                    <h5>Что-то еще</h5>
+                                    <p class="descript">Как принято считать, тщательные исследования конкурентов будут ассоциативно распределены по отраслям.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="video-popup" id="videoPopup">
+                <div class="video-popup__overlay"></div>
+                <div class="video-popup__content">
+                    <button class="video-popup__close">&times;</button>
+                    <video id="popupVideo" controls>
+                        <source src="./image/img/video.MP4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <script src="./js/swiper-bundle.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
