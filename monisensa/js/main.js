@@ -118,9 +118,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const sensorSlider = new Swiper('.sensor-swiper', {
     slidesPerView: 'auto',
-    spaceBetween: 24,
+    spaceBetween: 8,
 
+    breakpoints: {
+      450: {
+        spaceBetween: 24,
 
+      },
+
+    },
   });
 
 
@@ -357,5 +363,6 @@ document.addEventListener('keydown', (e) => {
 
 
 });
+
 
 
