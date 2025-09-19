@@ -349,6 +349,8 @@
 
     .hero_play-btn-mb {
         display: flex;
+       gap: 8px;
+        padding: 16px;
     }
 
     .hero_main-btn {
@@ -548,6 +550,7 @@
     .social_btn {
         border-radius: 20px;
         flex: 1 1 auto;
+        box-shadow: 0 8px 90px 10px var(--stroke-secondary-interface);
     }
 
     .social_btn span {
@@ -711,7 +714,7 @@
     }
 
     .footer_btn {
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -723,6 +726,8 @@
     .footer_btn-item .blue_element {
         padding: 14px 0;
         margin-bottom: 16px;
+        font-weight: 600;
+        line-height: 156%;
     }
 
     .footer_btn-item .blue_element span {
@@ -738,6 +743,7 @@
     }
 
 }
+
 
 
 
