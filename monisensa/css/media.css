@@ -598,9 +598,7 @@
         margin-left: 8px;
     }
 
-    .sensor_title span {
-        color: var(--typograph-sand);
-    }
+ 
 
     .application {
         padding: 48px 0 8px;
@@ -748,3 +746,4 @@
 
 
 @media (max-width: 0px) {}
+
