@@ -180,7 +180,7 @@ html {
     padding: 12px 12px 12px 24px;
     box-shadow: 0 0 40px 0 rgba(15, 27, 52, 0.24);
     background: var(--typograph-white-primary);
-    border-radius: 24px;
+    border-radius: 24px 32px 32px 24px;
     max-width: 440px;
     z-index: 999;
 }
@@ -725,4 +725,5 @@ body.header-drop-menu {
 
 .footer_descript {
     max-width: 915px;
+
 }
