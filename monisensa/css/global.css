@@ -419,6 +419,10 @@ body.header-drop-menu{
     margin-left: 12px;
 }
 
+.scroll .social_btn svg {
+    margin-right: 10px;
+}
+
 .scroll .social_btn:hover {
     color: #379d00;
 }
@@ -663,4 +667,5 @@ body.header-drop-menu{
 
 .footer_descript {
     max-width: 915px;
+
 }
