@@ -101,6 +101,7 @@
 
 .appmonisensa_qr {
     max-width: 124px;
+        flex-shrink: 0;
 }
 
 .appmonisensa_qr img {
@@ -612,4 +613,5 @@
     border-radius: 100%;
     filter: blur(90px);
     z-index: -1;
+
 }
