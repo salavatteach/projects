@@ -728,6 +728,7 @@ body.header-drop-menu {
 
 .footer_main {
     padding: 72px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
@@ -816,4 +817,5 @@ body.header-drop-menu {
 
 .footer_descript {
     max-width: 915px;
+
 }
