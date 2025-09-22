@@ -181,7 +181,6 @@
 
 .contacts__details-list li .copy-btn-tooltip {
     width: fit-content;
-    top:-48px;
 }
 
 .copy-btn.copied .copy-btn-tooltip {
@@ -215,6 +214,7 @@
     font-weight: 500;
     line-height: 156%;
     letter-spacing: -0.01em;
+    position: relative;
 }
 
 .contacts__details-list li:hover {
@@ -267,5 +267,4 @@
 .solution_img img {
     width: 100%;
     box-shadow: inset 0 0 266px 60px rgba(225, 202, 138, 0.2);
-
 }

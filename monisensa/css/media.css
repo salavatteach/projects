@@ -1117,9 +1117,8 @@
         display: none;
     }
 
-    .copy-btn-tooltip {
-        top: -15px;
-        right: 0;
+    .contacts__details-list li:first-child .copy-btn-tooltip {
+        right: -15px;
     }
 
     .contacts__download-tootip {
