@@ -53,7 +53,11 @@
 }
 
 .appmonisensa_top-img img {
-    width: 100%;
+  display: block;       
+  width: 100%;          
+  height: auto;        
+  object-fit: cover;    
+  flex-shrink: 0; 
 }
 
 .appmonisensa_top-content {
@@ -105,7 +109,11 @@
 }
 
 .appmonisensa_qr img {
-    width: 100%;
+  display: block;       
+  width: 100%;          
+  height: auto;        
+  object-fit: cover;    
+  flex-shrink: 0; 
 }
 
 .appmonisensa_apps-btn {
@@ -615,3 +623,4 @@
     z-index: -1;
 
 }
+
