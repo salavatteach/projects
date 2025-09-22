@@ -558,40 +558,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
- (function () {
+(function () {
   const text = document.querySelector(".appmonisensa_descript-text");
   const btn = document.querySelector(".appmonisensa_descript-btn");
-
   if (!text || !btn) return;
-
   const transitionTime = 400;
   text.style.overflow = "hidden";
   text.style.transition = `max-height ${transitionTime}ms ease`;
-  text.style.maxHeight = "80px"; 
-
-  function expand(el) {
-    const startHeight = el.scrollHeight;
-    el.style.maxHeight = "80px";
-    requestAnimationFrame(() => {
-      el.style.maxHeight = startHeight + "px";
-    });
-    el.classList.add("appmonisensa-expanded");
-    btn.textContent = "Скрыть описание";
-  }
-  function collapse(el) {
-    const startHeight = el.scrollHeight;
-    el.style.maxHeight = startHeight + "px";
-    requestAnimationFrame(() => {
-      el.style.maxHeight = "80px";
-    });
-    el.classList.remove("appmonisensa-expanded");
-    btn.textContent = "Показать полностью…";
-  }
+  text.style.maxHeight = "80px";
   btn.addEventListener("click", () => {
-    if (text.classList.contains("appmonisensa-expanded")) {
-      collapse(text);
+    const isExpanded = text.classList.contains("appmonisensa-expanded");
+
+    if (isExpanded) {
+      text.style.maxHeight = text.scrollHeight + "px"; 
+      void text.offsetHeight; 
+      text.style.maxHeight = "80px";
+      text.classList.remove("appmonisensa-expanded");
+      btn.textContent = "Показать полностью…";
     } else {
-      expand(text);
+      text.style.maxHeight = text.scrollHeight + "px";
+      text.classList.add("appmonisensa-expanded");
+      btn.textContent = "Скрыть описание";
     }
   });
   window.addEventListener("resize", () => {
@@ -608,4 +595,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 });
+
 
