@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>monisensa</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/swiper-bundle.css">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/home-technology.css">
+        <link rel="stylesheet" href="./css/help.css">
+        <link rel="stylesheet" href="./css/media.css">
+    </head>
+    <body class="body">
+        <div class="wrapper">
+            <header class="header">
+                <section class="header_section section_wht">
+                    <div class="header_inner">
+                        <a href="#" class="header_logo logo-pc">
+                            <img src="./image/icon/main-logo.svg" alt="logo">
+                        </a>
+                        <a href="#" class="header_logo logo-mb">
+                            <img src="./image/icon/logo-mb.svg" alt="logo">
+                        </a>
+                        <div class="header_center">
+                            <div class="menu_title">
+                                <h5>Меню</h5>
+                                <button class="dropdow-menu-close">
+                                    &times;
+                                </button>
+                            </div>
+                            <nav class="header_menu">
+                                <ul class="nav_list">
+                                    <li class="nav_list-item current-menu-item">
+                                        <a href="">О технологии</a>
+                                    </li>
+                                    <li class="nav_list-item">
+                                        <a href="">Приложение</a>
+                                    </li>
+                                    <li class="nav_list-item">
+                                        <a href="">Контакты</a>
+                                    </li>
+                                    <li class="nav_list-item">
+                                        <a href="">Помощь</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <nav class="language-switcher" aria-label="Language selector">
+                                <button class="language-switcher__toggle" aria-haspopup="listbox" aria-expanded="false">
+                                    <img src="./image/icon/ic-rus.webp" alt="" class="language-switcher__flag">
+                                    <span>Switch language</span>
+                                    <svg
+                                        width="10"
+                                        height="5"
+                                        viewBox="0 0 10 5"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path d="M0 0L5 5L10 0H0Z" fill="#261000"/>
+                                    </svg>
+                                </button>
+                                <ul class="language-switcher__list" role="listbox" tabindex="-1">
+                                    <li role="option" aria-selected="true">
+                                        <button lang="ru">
+                                            <img src="./image/icon/ic-rus.webp" alt="">
+                                            Русский
+                                        </button>
+                                    </li>
+                                    <li role="option" aria-selected="false">
+                                        <button lang="en">
+                                            <img src="./image/icon/ic-usa.webp" alt="">
+                                            English
+                                        </button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <a href="#" class="header_whatsapp social_btn">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M12.0398 2C6.5798 2 2.1298 6.45 2.1298 11.91C2.1298 13.66 2.5898 15.36 3.4498 16.86L2.0498 22L7.2998 20.62C8.7498 21.41 10.3798 21.83 12.0398 21.83C17.4998 21.83 21.9498 17.38 21.9498 11.92C21.9498 9.27 20.9198 6.78 19.0498 4.91C17.1798 3.03 14.6898 2 12.0398 2ZM12.0498 3.67C14.2498 3.67 16.3098 4.53 17.8698 6.09C19.4198 7.65 20.2798 9.72 20.2798 11.92C20.2798 16.46 16.5798 20.15 12.0398 20.15C10.5598 20.15 9.10981 19.76 7.8498 19L7.5498 18.83L4.4298 19.65L5.2598 16.61L5.0598 16.29C4.2398 15 3.7998 13.47 3.7998 11.91C3.8098 7.37 7.4998 3.67 12.0498 3.67ZM8.5298 7.33C8.3698 7.33 8.0998 7.39 7.8698 7.64C7.6498 7.89 6.9998 8.5 6.9998 9.71C6.9998 10.93 7.8898 12.1 7.9998 12.27C8.1398 12.44 9.7598 14.94 12.2498 16C12.8398 16.27 13.2998 16.42 13.6598 16.53C14.2498 16.72 14.7898 16.69 15.2198 16.63C15.6998 16.56 16.6798 16.03 16.8898 15.45C17.0998 14.87 17.0998 14.38 17.0398 14.27C16.9698 14.17 16.8098 14.11 16.5598 14C16.3098 13.86 15.0898 13.26 14.8698 13.18C14.6398 13.1 14.4998 13.06 14.3098 13.3C14.1498 13.55 13.6698 14.11 13.5298 14.27C13.3798 14.44 13.2398 14.46 12.9998 14.34C12.7398 14.21 11.9398 13.95 10.9998 13.11C10.2598 12.45 9.7698 11.64 9.6198 11.39C9.4998 11.15 9.6098 11 9.7298 10.89C9.8398 10.78 9.9998 10.6 10.0998 10.45C10.2298 10.31 10.2698 10.2 10.3498 10.04C10.4298 9.87 10.3898 9.73 10.3298 9.61C10.2698 9.5 9.7698 8.26 9.5598 7.77C9.35981 7.29 9.1598 7.35 8.9998 7.34C8.8598 7.34 8.6998 7.33 8.5298 7.33Z" fill="white"/>
+                        </svg>
+                        <span>Написать в</span>
+                        WhatsApp
+                    </a>
+                    <button class="header_dropdown-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </section>
+            </header>
+            <main class="main">
+                <div class="breadcrumb-list">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a>
+                                <span itemprop="name">Главная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span itemprop="name">Помощь</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span itemprop="name">Мобильное приложение</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span itemprop="name">Что делать, если приложение не запускается на Android 10?</span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <section class="help_archive">
+                    <div class="container">
+                        <div class="help_archive-inner">
+                            <aside class="help_archive-sidebar">
+                                <button class="help_sidebar-open light_btn">
+                                    <svg
+                                        width="25"
+                                        height="24"
+                                        viewBox="0 0 25 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path d="M16.5 12C16.5 11.4696 16.7107 10.9609 17.0858 10.5858C17.4609 10.2107 17.9696 10 18.5 10C19.0304 10 19.5391 10.2107 19.9142 10.5858C20.2893 10.9609 20.5 11.4696 20.5 12C20.5 12.5304 20.2893 13.0391 19.9142 13.4142C19.5391 13.7893 19.0304 14 18.5 14C17.9696 14 17.4609 13.7893 17.0858 13.4142C16.7107 13.0391 16.5 12.5304 16.5 12ZM10.5 12C10.5 11.4696 10.7107 10.9609 11.0858 10.5858C11.4609 10.2107 11.9696 10 12.5 10C13.0304 10 13.5391 10.2107 13.9142 10.5858C14.2893 10.9609 14.5 11.4696 14.5 12C14.5 12.5304 14.2893 13.0391 13.9142 13.4142C13.5391 13.7893 13.0304 14 12.5 14C11.9696 14 11.4609 13.7893 11.0858 13.4142C10.7107 13.0391 10.5 12.5304 10.5 12ZM4.5 12C4.5 11.4696 4.71071 10.9609 5.08579 10.5858C5.46086 10.2107 5.96957 10 6.5 10C7.03043 10 7.53914 10.2107 7.91421 10.5858C8.28929 10.9609 8.5 11.4696 8.5 12C8.5 12.5304 8.28929 13.0391 7.91421 13.4142C7.53914 13.7893 7.03043 14 6.5 14C5.96957 14 5.46086 13.7893 5.08579 13.4142C4.71071 13.0391 4.5 12.5304 4.5 12Z" fill="#261000"/>
+                                    </svg>
+                                    Навигация
+                                </button>
+                                <div class="help_sidebar-category-wrap">
+                                    <div class="dropdow-help-title">
+                                        <h5>Навигация</h5>
+                                        <button class="dropdow-help-close">
+                                            &times;
+                                        </button>
+                                    </div>
+                                    <ul class="help_sidebar-list">
+                                        <li class="help_sidebar-item current-cat">
+                                            <a href="#" class="descript ve-category">
+                                                <span class="category-icon">
+                                                    <svg
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path d="M19.1 8.7C20.9 10.5 20.9 13.3 19.1 15.2L20.1 16.2C22.6 13.9 22.6 10.1 20.1 7.7L19.1 8.7ZM18 9.8L17 10.8C17.5 11.5 17.5 12.4 17 13.1L18 14.1C19.2 12.9 19.2 11.1 18 9.8ZM14 1H4C3.46957 1 2.96086 1.21071 2.58579 1.58579C2.21071 1.96086 2 2.46957 2 3V21C2 21.5304 2.21071 22.0391 2.58579 22.4142C2.96086 22.7893 3.46957 23 4 23H14C14.5304 23 15.0391 22.7893 15.4142 22.4142C15.7893 22.0391 16 21.5304 16 21V3C16 2.46957 15.7893 1.96086 15.4142 1.58579C15.0391 1.21071 14.5304 1 14 1ZM14 20H4V4H14V20Z" fill="#261000"/>
+                                                    </svg>
+                                                    <img src="" alt="">
+                                                </span>
+                                                Мобильное приложение
+                                            </a>
+                                        </li>
+                                        <li class="help_sidebar-item">
+                                            <a href="#" class="descript">
+                                                <span class="category-icon">
+                                                    <svg
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path d="M19 19H5V5H19M19 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 3.89 20.1 3 19 3ZM11 15H13V17H11V15ZM11 7H13V13H11V7Z" fill="#261000"/>
+                                                    </svg>
+                                                    <img src="" alt="">
+                                                </span>
+                                                Коды ошибок
+                                            </a>
+                                        </li>
+                                        <li class="help_sidebar-item">
+                                            <a href="#" class="descript">
+                                                <span class="category-icon">
+                                                    <svg
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path d="M16.0598 13.09L21.6898 18.68L18.3698 21.96L12.7798 16.37V15.45L15.1398 13.09H16.0598ZM16.9698 10.56L15.9998 9.6L11.2098 14.4V16.37L5.5798 22L2.2998 18.68L7.8898 13.09H9.8598L10.6398 12.31L6.7998 8.46H5.4998L2.6898 5.62L5.3098 3L8.1098 5.8V7.11L11.9998 10.95L14.6598 8.29L13.6998 7.28L14.9998 5.97H12.3398L11.6898 5.32L14.9998 2L15.6598 2.66V5.32L16.9698 4L20.2498 7.28C21.3398 8.38 21.3398 10.17 20.2498 11.26L18.2798 9.25L16.9698 10.56Z" fill="#261000"/>
+                                                    </svg>
+                                                    <img src="" alt="">
+                                                </span>
+                                                Установка
+                                            </a>
+                                        </li>
+                                        <li class="help_sidebar-item">
+                                            <a href="#" class="descript">
+                                                <span class="category-icon">
+                                                    <svg
+                                                        width="25"
+                                                        height="24"
+                                                        viewBox="0 0 25 24"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path d="M16.5 12C16.5 11.4696 16.7107 10.9609 17.0858 10.5858C17.4609 10.2107 17.9696 10 18.5 10C19.0304 10 19.5391 10.2107 19.9142 10.5858C20.2893 10.9609 20.5 11.4696 20.5 12C20.5 12.5304 20.2893 13.0391 19.9142 13.4142C19.5391 13.7893 19.0304 14 18.5 14C17.9696 14 17.4609 13.7893 17.0858 13.4142C16.7107 13.0391 16.5 12.5304 16.5 12ZM10.5 12C10.5 11.4696 10.7107 10.9609 11.0858 10.5858C11.4609 10.2107 11.9696 10 12.5 10C13.0304 10 13.5391 10.2107 13.9142 10.5858C14.2893 10.9609 14.5 11.4696 14.5 12C14.5 12.5304 14.2893 13.0391 13.9142 13.4142C13.5391 13.7893 13.0304 14 12.5 14C11.9696 14 11.4609 13.7893 11.0858 13.4142C10.7107 13.0391 10.5 12.5304 10.5 12ZM4.5 12C4.5 11.4696 4.71071 10.9609 5.08579 10.5858C5.46086 10.2107 5.96957 10 6.5 10C7.03043 10 7.53914 10.2107 7.91421 10.5858C8.28929 10.9609 8.5 11.4696 8.5 12C8.5 12.5304 8.28929 13.0391 7.91421 13.4142C7.53914 13.7893 7.03043 14 6.5 14C5.96957 14 5.46086 13.7893 5.08579 13.4142C4.71071 13.0391 4.5 12.5304 4.5 12Z" fill="#261000"/>
+                                                    </svg>
+                                                    <img src="" alt="">
+                                                </span>
+                                                Прочее
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                            <div class="help_article-content section_wht">
+                                <div class="help_article-top">
+                                    <div class="article_top-info">
+                                        <button class="article_back light_btn">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path d="M15.4199 16.59L10.8299 12L15.4199 7.41L13.9999 6L7.99992 12L13.9999 18L15.4199 16.59Z" fill="#7C3F1A"/>
+                                            </svg>
+                                            Назад
+                                        </button>
+                                        <div class="article_category-badge">Мобильное приложение</div>
+                                        <div class="article_post-time descript">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20ZM12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM17 13.9L16.3 15.2L11 12.3V7H12.5V11.4L17 13.9Z" fill="black" fill-opacity="0.5"/>
+                                            </svg>
+                                            02.03.2025 в 15:00
+                                        </div>
+                                    </div>
+                                    <h1 class="help_article-title first_title">
+                                        Что делать, если приложение 
+                                        не запускается на Android 10?
+                                    </h1>
+                                </div>
+                                <div class="help_article-author">
+                                    <div class="article_author-img">
+                                        <img src="./image/img/img-contact-photo.webp" alt="">
+                                    </div>
+                                    <div class="article_author-info">
+                                        <h5 class="article_author-name">
+                                            Сахар Могимиян
+                                            <span class="descript">Менеджер проекта</span>
+                                        </h5>
+                                        <p class="article_author-descript descript">
+                                            Эксперт в области возобновляемой энергетики,
+                                             5 лет опыта работы с промышленными проектами
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="article_content">
+                                    <p>
+                                        Также как глубокий уровень погружения требует от нас анализа переосмысления внешнеэкономических политик.
+                                        <a href="#">Для современного мира</a>
+                                        синтетическое тестирование влечет за собой 
+                                        процесс внедрения и модернизации системы обучения кадров, соответствующей насущным потребностям.
+                                    </p>
+                                    <blockquote>
+                                        <p>
+                                            Господа, убеждённость некоторых оппонентов позволяет 
+                                            выполнить важные задания по разработке форм воздействия.
+                                        </p>
+                                    </blockquote>
+                                    <p>
+                                        С учётом сложившейся международной обстановки, граница обучения кадров является качественно новой ступенью модели развития. 
+                                        Есть над чем задуматься: независимые государства, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. 
+                                        Ясность нашей позиции очевидна: глубокий уровень погружения требует определения и уточнения экспериментов, поражающих по своей масштабности и грандиозности.
+                                    </p>
+                                    <p>
+                                        Есть над чем задуматься: тщательные исследования конкурентов, превозмогая сложившуюся непростую экономическую ситуацию, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. 
+                                            Банальные, но неопровержимые выводы, а также ключевые особенности структуры проекта являются только методом политического участия и функционально разнесены на независимые элементы. Для современного мира существующая теория позволяет оценить значение существующих финансовых и административных условий.
+                                    </p>
+                                    <div class="my-widget">
+                                        <h4 class="my-widget__title">Заголовок внешней ссылки</h4>
+                                        <a href="#" class="my-widget__blue-btn blue_element">Большая красивая кнопка</a>
+                                        <a href="#" class="my-widget__light-btn light_btn">Кнопка</a>
+                                    </div>
+                                    <figure class="wp-block-image">
+                                        <img src="./image/img/img-article.webp" alt="Описание изображения">
+                                    </figure>
+                                    <p>
+                                        /br> юзаем, не стесняемся!
+                                    </p>
+                                    <ul>
+                                        <li>В частности, убеждённость некоторых оппонентов предоставляет широкие возможности для стандартных подходов.</li>
+                                        <li>Противоположная точка зрения подразумевает, что сторонники тоталитаризма в науке в равной степени предоставлены сами себе.</li>
+                                        <li>Безусловно, социально-экономическое развитие требует анализа своевременного выполнения сверхзадачи.</li>
+                                        <li>С другой стороны, разбавленное изрядной долей эмпатии, рациональное мышление влечет за собой процесс внедрения и модернизации переосмысления внешнеэкономических политик!</li>
+                                    </ul>
+                                    <p>Однозначно, некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
+                                    <div class="callout warning">
+                                        <div class="callout_top">
+                                            <h4 class="callout_title">Warning</h4>
+                                        </div>
+                                        <p class="callout__content">
+                                            Господа, убеждённость некоторых оппонентов позволяет 
+                                            выполнить важные задания по разработке форм воздействия.
+                                        </p>
+                                    </div>
+                                    <div class="callout info">
+                                        <div class="callout_top">
+                                            <h4 class="callout_title">Info</h4>
+                                        </div>
+                                        <p class="callout__content">Банальные, но неопровержимые выводы, а также сторонники тоталитаризма в науке и по сей день остаются уделом либералов, которые жаждут быть в равной степени предоставлены сами себе.</p>
+                                    </div>
+                                    <div class="callout question">
+                                        <div class="callout_top">
+                                            <h4 class="callout_title">Question</h4>
+                                        </div>
+                                        <p class="callout__content">Идейные соображения высшего порядка, а также базовый вектор развития является качественно новой ступенью первоочередных требований.</p>
+                                    </div>
+                                    <div class="callout success">
+                                        <div class="callout_top">
+                                            <h4 class="callout_title">Success</h4>
+                                        </div>
+                                        <p class="callout__content">Современные технологии достигли такого уровня, что новая модель организационной деятельности создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса стандартных подходов.</p>
+                                    </div>
+                                    <ol>
+                                        <li>А также непосредственные участники технического прогресса являются только методом политического участия и своевременно верифицированы.</li>
+                                        <li>И нет сомнений, что многие известные личности лишь добавляют фракционных разногласий и подвергнуты целой серии независимых исследований.</li>
+                                        <li>В рамках спецификации современных стандартов, акционеры крупнейших компаний набирают популярность среди определенных слоев населения, а значит, должны быть объявлены нарушающими общечеловеческие нормы этики и морали.</li>
+                                        <li>Но многие известные личности, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут обнародованы.</li>
+                                    </ol>
+                                    <figure class="wp-block-table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Table</th>
+                                                    <th>Table</th>
+                                                    <th>Table</th>
+                                                    <th>Table</th>
+                                                    <th>Table</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </figure>
+                                    <figure class="wp-block-table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Table</th>
+                                                    <th>Table</th>
+                                                    <th>Table</th>
+                                                    <th>Table</th>
+                                                    <th>Table</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                    <td>Table</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </figure>
+                                </div>
+                                <div class="article_like-wrap">
+                                    <div class="article_like">
+                                        <p class="article_like-text">Статья была полезна?</p>
+                                        <div class="article_like-btns">
+                                            <button class="article_like-button light_btn">
+                                                <svg
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path d="M5 9V21H1V9H5ZM9 21C8.46957 21 7.96086 20.7893 7.58579 20.4142C7.21071 20.0391 7 19.5304 7 19V9C7 8.45 7.22 7.95 7.59 7.59L14.17 1L15.23 2.06C15.5 2.33 15.67 2.7 15.67 3.11L15.64 3.43L14.69 8H21C22.11 8 23 8.9 23 10V12C23 12.26 22.95 12.5 22.86 12.73L19.84 19.78C19.54 20.5 18.83 21 18 21H9ZM9 19H18.03L21 12V10H12.21L13.34 4.68L9 9.03V19Z" fill="#261000" style="fill:#261000;fill:color(display-p3 0.1506 0.0628 0.0000);fill-opacity:1;"/>
+                                                </svg>
+                                                Да
+                                            </button>
+                                            <button class="article_dislike-button light_btn">
+                                                <svg
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path d="M5 9V21H1V9H5ZM9 21C8.46957 21 7.96086 20.7893 7.58579 20.4142C7.21071 20.0391 7 19.5304 7 19V9C7 8.45 7.22 7.95 7.59 7.59L14.17 1L15.23 2.06C15.5 2.33 15.67 2.7 15.67 3.11L15.64 3.43L14.69 8H21C22.11 8 23 8.9 23 10V12C23 12.26 22.95 12.5 22.86 12.73L19.84 19.78C19.54 20.5 18.83 21 18 21H9ZM9 19H18.03L21 12V10H12.21L13.34 4.68L9 9.03V19Z" fill="#261000" style="fill:#261000;fill:color(display-p3 0.1506 0.0628 0.0000);fill-opacity:1;"/>
+                                                </svg>
+                                                Нет
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="article_thanks">
+                                        <p class="article_like-text">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#14c24f"/>
+                                            </svg>Статья была полезна?
+                                        </p>
+                                        <button class="article_thanks-btn light_btn">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path d="M2 12C2 16.97 6.03 21 11 21C13.39 21 15.68 20.06 17.4 18.4L15.9 16.9C14.63 18.25 12.86 19 11 19C4.76 19 1.64 11.46 6.05 7.05C10.46 2.64 18 5.77 18 12H15L19 16H19.1L23 12H20C20 7.03 15.97 3 11 3C6.03 3 2 7.03 2 12Z" fill="#261000" style="fill:#261000;fill:color(display-p3 0.1506 0.0628 0.0000);fill-opacity:1;"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                <footer class="footer">
+                    <div class="footer_top footer_top-contact">
+                        <div class="container">
+                            <div class="footer_contact">
+                                <div class="footer_contact-top">
+                                    <h2 class="footer_contact-title first_title">Не нашли нужное?</h2>
+                                    <p class="footer_contact-descript descript">Напишите нам напрямую</p>
+                                </div>
+                                <div class="footer__emails section_wht">
+                                    <div class="footer__email-block">
+                                        <p class="descript">По любым вопросам</p>
+                                        <a href="mailto:info@monisensa.com" class="contacts__email">
+                                            <span>info</span>
+                                            @monisensa.com
+                                        </a>
+                                    </div>
+                                    <div class="footer__email-block">
+                                        <p class="descript">Техническая поддержка</p>
+                                        <a href="mailto:support@monisensa.com" class="contacts__email contacts__email_support">
+                                            <span>support</span>
+                                            @monisensa.com
+                                        </a>
+                                    </div>
+                                    <a href="https://wa.me/70000000000" class="footer__whatsapp social_btn" aria-label="Написать в WhatsApp">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path d="M12.0398 2C6.5798 2 2.1298 6.45 2.1298 11.91C2.1298 13.66 2.5898 15.36 3.4498 16.86L2.0498 22L7.2998 20.62C8.7498 21.41 10.3798 21.83 12.0398 21.83C17.4998 21.83 21.9498 17.38 21.9498 11.92C21.9498 9.27 20.9198 6.78 19.0498 4.91C17.1798 3.03 14.6898 2 12.0398 2ZM12.0498 3.67C14.2498 3.67 16.3098 4.53 17.8698 6.09C19.4198 7.65 20.2798 9.72 20.2798 11.92C20.2798 16.46 16.5798 20.15 12.0398 20.15C10.5598 20.15 9.10981 19.76 7.8498 19L7.5498 18.83L4.4298 19.65L5.2598 16.61L5.0598 16.29C4.2398 15 3.7998 13.47 3.7998 11.91C3.8098 7.37 7.4998 3.67 12.0498 3.67ZM8.5298 7.33C8.3698 7.33 8.0998 7.39 7.8698 7.64C7.6498 7.89 6.9998 8.5 6.9998 9.71C6.9998 10.93 7.8898 12.1 7.9998 12.27C8.1398 12.44 9.7598 14.94 12.2498 16C12.8398 16.27 13.2998 16.42 13.6598 16.53C14.2498 16.72 14.7898 16.69 15.2198 16.63C15.6998 16.56 16.6798 16.03 16.8898 15.45C17.0998 14.87 17.0998 14.38 17.0398 14.27C16.9698 14.17 16.8098 14.11 16.5598 14C16.3098 13.86 15.0898 13.26 14.8698 13.18C14.6398 13.1 14.4998 13.06 14.3098 13.3C14.1498 13.55 13.6698 14.11 13.5298 14.27C13.3798 14.44 13.2398 14.46 12.9998 14.34C12.7398 14.21 11.9398 13.95 10.9998 13.11C10.2598 12.45 9.7698 11.64 9.6198 11.39C9.4998 11.15 9.6098 11 9.7298 10.89C9.8398 10.78 9.9998 10.6 10.0998 10.45C10.2298 10.31 10.2698 10.2 10.3498 10.04C10.4298 9.87 10.3898 9.73 10.3298 9.61C10.2698 9.5 9.7698 8.26 9.5598 7.77C9.35981 7.29 9.1598 7.35 8.9998 7.34C8.8598 7.34 8.6998 7.33 8.5298 7.33Z" fill="white"/>
+                                        </svg>
+                                        Написать в WhataApp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_main">
+                        <div class="container">
+                            <div class="footer_main-inner">
+                                <a href="#" class="footer_main-logo">
+                                    <img src="./image/icon/sl-logo.svg" alt="">
+                                </a>
+                                <ul class="footer_rights-list">
+                                    <li class="footer_rights-item">© 2023–2024. Все права защищены</li>
+                                    <li class="footer_rights-item">ООО «МОНИСЕНСА РАЗРАБОТКА»</li>
+                                    <li class="footer_rights-item">
+                                        <a href="#">Обработка персональных данных</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer_info-list">
+                                    <li class="footer_info-item">ИНН: 5262393830</li>
+                                    <li class="footer_info-item">КПП: 772101001</li>
+                                    <li class="footer_info-item">г. Москва, вн.тер.г. Муниципальный округ Некрасовка, ул. Маресьева, д. 7, к. 4, кв. 116</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_bottom">
+                        <div class="container">
+                            <div class="footer_bottom-inner">
+                                <a href="#" class="footer_bottom-logo">
+                                    <img src="./image/icon/fond-logo.svg" alt="fond">
+                                </a>
+                                <p class="footer_descript descript">
+                                    Проект создан при поддержке Федерального государственного бюджетного  учреждения «Фонд содействия 
+                                развитию малых форм предприятий в научно-технической сфере в рамках программы «Студенческий стартап»  
+                                федерального проекта «Платформа университетского технологического предпринимательства»
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="cookie_popup">
+                    <p class="cookie_text">Мы используем файлы cookie для улучшения работы сайта</p>
+                    <button class="cookie_btn">Хорошо</button>
+                </div>
+            </div>
+            <script src="./js/swiper-bundle.js"></script>
+            <script src="./js/main.js"></script>
+        </body>
+    </html>
