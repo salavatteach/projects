@@ -1,0 +1,585 @@
+.appmonisensa {
+    padding: 48px 0 100px;
+    background: url(../image/backgr/круги-webp.webp) top center / cover no-repeat;
+}
+
+.appmonisensa_inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+}
+
+
+
+.appmonisensa_top {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+}
+
+.appmonisensa_top-img {
+    border: 1px solid var(--stroke-secondary-interface);
+    border-radius: 40px;
+    max-width: 270px;
+    overflow: hidden;
+    max-height: 270px;
+    width: 100%;
+    z-index: 1;
+}
+
+.appmonisensa_top-img img {
+    width: 100%;
+}
+
+.appmonisensa_top-content {
+    width: 100%;
+}
+
+.appmonisensa_top-descript,
+.appmonisensa_title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.appmonisensa_title span {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--typograph-brown);
+    border-radius: 50%;
+    padding: 6px 8px;
+    width: 40px;
+    height: 40px;
+    background: var(--typograph-white-primary);
+}
+
+.appmonisensa_top-descript {
+    margin: 8px 0 48px;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: -0.01em;
+    color: var(--typograph-black);
+}
+
+.appmonisensa_top-descript span {
+    color: var(--typograph-black-secondary);
+}
+
+
+.appmonisensa_apps-link {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.appmonisensa_qr {
+    max-width: 124px;
+}
+
+.appmonisensa_qr img {
+    width: 100%;
+}
+
+.appmonisensa_apps-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    text-align: center;
+    max-width: 710px;
+}
+
+.appmonisensa_apps-demo {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--typograph-white-primary);
+    border-radius: 20px;
+    padding: 16px 24px;
+    width: 100%;
+    grid-column: 1/3;
+}
+
+
+.appmonisensa_apps-rustore,
+.appmonisensa_apps-appstore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    padding: 0 6px;
+    background: #e5e5e6;
+    border-radius: 12px;
+    height: 56px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.appmonisensa_apps-appstore {
+    background: #e5e5e6;
+}
+
+.appmonisensa_apps-rustore {
+    background: #e1e7ff;
+}
+
+.appmonisensa_apps-rustore:hover,
+.appmonisensa_apps-appstore:hover {
+    border: 1px solid var(--stroke-secondary-interface);
+}
+
+.appmonisensa_apps-rustore:active {
+    background: #d5dcff;
+}
+
+.appmonisensa_apps-appstore:active {
+    background: #e0e0e0;
+}
+
+.appmonisensa_main {
+    position: relative;
+    width: 100%;
+}
+
+.appmonisensa_slider {
+    border-radius: 24px;
+}
+
+.appmonisensa_slider-item {
+    border-radius: 24px;
+    max-width: 324px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.appmonisensa_slider-item img {
+    width: 100%;
+}
+
+.appmonisensa_slider-nav {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: -3%;
+    right: 0;
+    width: 106%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.appmonisensa_slider-prev,
+.appmonisensa_slider-next {
+    position: relative;
+    pointer-events: all;
+}
+
+.appmonisensa_slider-prev:before,
+.appmonisensa_slider-next:before {
+    content: '';
+    position: absolute;
+    top: -7.5px;
+    width: 36px;
+    height: 72px;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.appmonisensa_slider-prev:before {
+    left: 27px;
+    border-top-right-radius: 36px;
+    border-bottom-right-radius: 36px;
+}
+
+.appmonisensa_slider-next:before {
+    left: -8px;
+    border-top-left-radius: 36px;
+    border-bottom-left-radius: 36px;
+}
+
+.appmonisensa_popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 9999;
+}
+
+.appmonisensa_popup.appmonisensa-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.appmonisensa_popup-content {
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+}
+
+.appmonisensa_popup-img {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    display: block;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.appmonisensa_popup-close {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.appmonisensa_popup-slider ul li {
+    display: flex;
+    justify-content: center;
+    max-width: none;
+}
+
+.appmonisensa_popup-slider ul li img {
+    max-width: 100%;
+    max-height: 90vh;
+    width: auto;
+    border-radius: 30px;
+}
+
+
+
+.appmonisensa_bottom {
+    /* position: relative; */
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    width: 100%;
+    z-index: 1;
+}
+
+.appmonisensa_bottom-content {
+    max-width: 660px;
+    flex: 1;
+}
+
+
+.appmonisensa_descript-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: -0.01em;
+    color: var(--typograph-black);
+    margin: 24px 0 16px;
+    max-height: 80px;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease;
+}
+
+
+.appmonisensa_descript-text.appmonisensa-expanded {
+    max-height: none;
+}
+
+.appmonisensa_links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    margin-top: 68px;
+}
+
+.appmonisensa_descript-btn,
+.appmonisensa_link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--typograph-blue);
+    transition: var(--transition);
+}
+
+.appmonisensa_bottom-sidebar {
+    display: block;
+    position: sticky;
+    top: 80px;
+    width: 100%;
+    max-width: 440px;
+}
+
+
+.appmonisensa_sidebar-list {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.appmonisensa_sidebar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+    padding: 24px;
+    border-radius: 16px;
+    max-width: 440px;
+    width: 100%;
+}
+
+.appmonisensa_minilist-item p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: -0.01em;
+    color: var(--typograph-black);
+}
+
+
+.appmonisensa_descript-btn:hover,
+.appmonisensa_link:hover {
+    color: #2b71f6;
+}
+
+.appmonisensa_descript-btn:active,
+.appmonisensa_link:active {
+    color: var(--typograph-brown);
+}
+
+
+.appmonisensa_form {
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.appmonisensa_form-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+
+
+.appmonisensa_form-content,
+.appmonisensa_form-top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    max-width: 608px;
+}
+
+.appmonisensa_form-top {
+    margin-bottom: 72px;
+}
+
+
+.appmonisensa_form-descript {
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: -0.01em;
+    margin-top: 12px;
+}
+
+.appmonisensa_form-bottom {
+    width: 100%;
+}
+
+.appmonisensa_form-bottom form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+}
+
+.form-group label {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    padding: 0 8px;
+    border-radius: 8px;
+    background: var(--typograph-white-primary);
+    color: var(--typograph-black-secondary);
+    transition: var(--transition);
+
+}
+
+
+.form-group input {
+    border: 1px solid var(--stroke-secondary-interface);
+    border-radius: 12px;
+    padding: 0 20px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: -0.01em;
+    width: 100%;
+    transition: var(--transition);
+}
+
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label {
+    font-size: 14px;
+    line-height: 114%;
+    top: -8px;
+    left: 14px;
+}
+
+.form-group input:hover {
+    border: 1px solid var(--typograph-black-secondary);
+}
+
+.form-group input:active {
+    border: 1px solid var(--typograph-blue);
+}
+
+.form-group:active label {
+    color: var(--typograph-blue);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border: 1px solid var(--stroke-secondary-interface);
+    border-radius: 12px;
+    padding: 0 20px;
+    height: 56px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+
+.form-checkbox:hover {
+    border: 1px solid var(--typograph-black-secondary);
+}
+
+.form-checkbox:active {
+    border: 1px solid var(--typograph-blue);
+}
+
+.form-checkbox span a {
+    transition: var(--transition);
+    text-decoration: underline;
+}
+
+.form-checkbox span a:hover {
+    color: var(--typograph-black);
+}
+
+.form-checkbox span a:active {
+    color: var(--typograph-brown);
+}
+
+.form-checkbox input {
+    position: relative;
+    flex-shrink: 0;
+    appearance: none;
+    border: 1px solid var(--stroke-secondary-interface);
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: transparent;
+}
+
+
+.form-checkbox input::before {
+    content: '';
+    position: absolute;
+    background: url(../image/icon/ic-form-check.svg) 50% 50% no-repeat;
+    opacity: 0;
+    transition: var(--transition);
+    inset: 0;
+}
+
+.form-checkbox input:hover:before {
+    opacity: .2;
+}
+
+.form-checkbox input:checked:before {
+    opacity: 1;
+    filter: invert(1);
+}
+
+.form-checkbox input:checked {
+    background: var(--typograph-blue);
+}
+
+.btn-submit {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--typograph-white-primary);
+    border-radius: 20px;
+    padding: 16px 24px;
+    max-width: 710px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.appmonisensa_form-img {
+    position: relative;
+    max-width: 440px;
+    margin-right: 35px;
+}
+
+.appmonisensa_form-img img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.appmonisensa_form-img::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    width: 355px;
+    height: 355px;
+    border-radius: 100%;
+    box-shadow: 0 0 200px 160px rgba(3, 119, 255, 0.12);
+    background: rgba(3, 119, 255, 0.12);
+    pointer-events: none;
+}
