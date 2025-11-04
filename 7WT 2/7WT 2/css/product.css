@@ -1,0 +1,31 @@
+.product_top {
+    padding: 70px 0;
+}
+
+.product {
+    padding: 50px 0;
+    background-color: var(--general-black);
+    color: var(--accent-white);
+    margin-bottom: 460px;
+}
+
+.product_content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product_content-item {
+
+    font-size: 45px;
+}
+
+.product_content-btn {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-top: 90px;
+
+}
+
+

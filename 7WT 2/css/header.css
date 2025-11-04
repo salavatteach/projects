@@ -1,0 +1,103 @@
+.header {
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.25);
+    align-items: center;
+
+}
+
+.header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--general-black);
+    height: 135px;
+    position: relative;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.nav_list-link {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    background: transparent;
+    border-radius: 15px;
+    color: var(--general-black);
+}
+
+.nav_list-link::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 0%;
+    height: 3px;
+    background: var(--general-color);
+    transition: var(--transition);
+}
+
+.nav_list-link:hover::before {
+    width: 100%;
+}
+
+.header_button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: var(--general-white);
+    border: 3px solid var(--general-color);
+    color: var(--general-black);
+    border-radius: 15px;
+}
+
+.header_button:hover {
+    background-color: var(--general-color);
+    border: 3px solid var(--general-color);
+    color: var(--general-white);
+}
+
+.burger_btn {
+    display: none;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+    background: transparent;
+}
+
+.burger_btn span {
+    position: relative;
+
+}
+
+.burger_btn span::before,
+.burger_btn span::after,
+.burger_btn span {
+    display: block;
+    border-radius: 5px;
+    width: 42px;
+    height: 9px;
+    background-color: var(--general-black);
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.25);
+    transition: var(--transition);
+}
+
+.burger_btn span::before {
+    content: '';
+    position: absolute;
+    top: -14px;
+}
+
+.burger_btn span::after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+}
+
+
+
+.burger_social {
+    display: none;
+}

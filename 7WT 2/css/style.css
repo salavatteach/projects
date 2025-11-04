@@ -1,0 +1,179 @@
+
+input[type="time"] {
+    padding: 10px;
+    font-size: 27px;
+    color: var(--accent-white);
+    background-color: var(--general-color);
+    border-radius: 15px;
+    font-family: 'LTWave';
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+}
+
+
+/*****************/
+
+input[type="checkbox"] {
+    appearance: none;
+    max-width: 30px;
+    width: 100%;
+    height: 31px;
+    background: transparent;
+    border-radius: 4px;
+    border: 3px solid var(--general-color);
+    transition: var(--transition);
+    cursor: pointer;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--general-color);
+}
+
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    background: url(../image/chek-new.svg) 50% 50% / cover no-repeat;
+    opacity: 0;
+    width: 25px;
+    height: 20px;
+    transition: var(--transition);
+}
+
+input[type="checkbox"]:checked::before {
+    opacity: 1;
+}
+
+/**********************************************/
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: 500;
+    border: 3px solid transparent;
+    letter-spacing: 0.03em;
+    transition: var(--transition);
+    color: var(--general-white);
+    padding: 10px 40px;
+    background-color: var(--general-color);
+    border-radius: 15px;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover {
+    background-color: var(--general-white);
+    border: 3px solid var(--general-color);
+    color: var(--general-black);
+}
+
+.mobile_view {
+    display: none !important;
+}
+
+.password_input-repeat,
+.password_input,
+.login_input,
+.key_input,
+.comment_input,
+.email_input,
+.tell_input {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--general-color);
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.regist-modal,
+.sign_up-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #1f171187;
+    padding: 10px;
+    /* opacity: 0;
+    visibility: hidden; */
+    transition: var(--transition);
+}
+
+.regist-body,
+.sign_up-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    width: 100%;
+    background-color: var(--accent-white);
+    padding: 40px 140px;
+    border-radius: 15px;
+}
+
+
+
+.regist-cancel,
+.sign_up-cancel {
+    max-width: 30px;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
+}
+
+.regist-cancel path,
+.sign_up-cancel path {
+    transition: var(--transition);
+
+}
+
+.regist-cancel:hover path,
+.sign_up-cancel:hover path {
+    fill: gray;
+}
+
+.regist-title,
+.sign_up-title {
+    margin-bottom: 40px;
+}
+
+.field_input {
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.email_input,
+.password_input-repeat,
+.password_input,
+.login_input {
+    font-size: 27px;
+    padding: 0 10px;
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 5px;
+}
+
+.regist-checkbox,
+.sign_up-checkbox {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    font-size: 17px;
+    line-height: 147%;
+}
+
+.regist-btn,
+.sign_up-btn {
+    margin: 150px auto 0;
+    max-width: 370px;
+    width: 100%;
+}
+

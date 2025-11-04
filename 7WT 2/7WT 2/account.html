@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <title>7WT</title>
+</head>
+
+<body class="body">
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header_inner">
+                    <button class="burger_btn" id="burger" aria-label="Открыть меню">
+                        <span></span>
+                    </button>
+                    <a href="#" class="header_logo">
+                        <img src="./image/logo-mobile.png" alt="">
+                    </a>
+                    <div class="nav_inner">
+                        <nav class="nav">
+                            <ul class="nav_list">
+                                <li class="nav_list-item">
+                                    <a href="" class="nav_list-link">Калькулятор</a>
+                                </li>
+                                <li class="nav_list-item">
+                                    <a href="" class="nav_list-link">Купить</a>
+                                </li>
+                                <li class="nav_list-item">
+                                    <a href="" class="nav_list-link">FAQ</a>
+                                </li>
+                                <li class="nav_list-item">
+                                    <a href="" class="nav_list-link">Контакты</a>
+                                </li>
+                                <li class="nav_list-item">
+                                    <a href="" class="nav_list-link">Проверка позиций</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="burger_social">
+                                <img src="./image/telegram.svg" alt="">
+                            </a>
+                        </nav>
+                    </div>
+                    <button class="header_button open_sign-up button">Личный кабинет</button>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="account">
+                <div class="container">
+                    <div class="account_inner">
+                        <h2 class="account_title title">Личный кабинет</h2>
+                        <div class="account_content">
+                            <table class="account_table">
+                                <thead>
+                                    <tr>
+                                        <th>Заказ</th>
+                                        <th>Статус</th>
+                                        <th>Кол-во</th>
+                                        <th>Выполнено</th>
+                                        <th>Цена продления</th>
+                                        <th>Дата покупки</th>
+                                        <th>Истекает</th>
+                                        <th>Продлить</th>
+                                        <th>Стоимость</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="totalCount">12343190</td>
+                                        <td id="top5Count">Активен</td>
+                                        <td id="top10Count">1000</td>
+                                        <td id="top20Count">100</td>
+                                        <td id="top50Count">500 RUB</td>
+                                        <td id="top50Count">03.06.2025 14:29</td>
+                                        <td id="top50Count">03.07.2025 14:30</td>
+                                        <td id="top50Count"></td>
+                                        <td id="top50Count">500 RUB</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="#" class="account_btn button">Выйти</a>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_logo">
+                        <a href="#" class="footer_logo-img"><img src="./image/logo-red-white.svg" alt=""></a>
+                    </div>
+                    <ul class="footer_info">
+                        <li class="footer_info-tools">
+                            <h5 class="footer_tools-title">Инструменты</h5>
+                            <ul class="footer_tools-list">
+                                <li class="footer_tools-item">Анализ сайта</li>
+                                <li class="footer_tools-item">SEO-анализ страницы</li>
+                                <li class="footer_tools-item">Проверка позиций</li>
+                                <li class="footer_tools-item">Аудит сайта</li>
+                                <li class="footer_tools-item">Проверка посещаемости</li>
+                            </ul>
+                        </li>
+                        <li class="footer_info-tools">
+                            <h5 class="footer_tools-title">Инструменты</h5>
+                            <ul class="footer_tools-list">
+                                <li class="footer_tools-item">Анализ сайта</li>
+                                <li class="footer_tools-item">SEO-анализ страницы</li>
+                                <li class="footer_tools-item">Проверка позиций</li>
+                                <li class="footer_tools-item">Аудит сайта</li>
+                                <li class="footer_tools-item">Проверка посещаемости</li>
+                            </ul>
+                        </li>
+                        <li class="footer_info-tools">
+                            <h5 class="footer_tools-title">Инструменты</h5>
+                            <ul class="footer_tools-list">
+                                <li class="footer_tools-item">Анализ сайта</li>
+                                <li class="footer_tools-item">SEO-анализ страницы</li>
+                                <li class="footer_tools-item">Проверка позиций</li>
+                                <li class="footer_tools-item">Аудит сайта</li>
+                                <li class="footer_tools-item">Проверка посещаемости</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <div class="footer_social">
+                        <a href="#" class="footer_social-img"><img src="./image/telegram.svg" alt=""></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Попап -->
+        <div class="sign_up-modal">
+            <div class="sign_up-body">
+                <h2 class="sign_up-title title">Авторизация</h2>
+
+                <a class="sign_up-cancel" aria-label="Закрыть">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.6114 2.51526C24.0019 2.90582 24.0018 3.53894 23.6113 3.92942L16.2951 11.2448C15.9045 11.6353 15.9045 12.2685 16.295 12.659L23.6113 19.9754C24.0018 20.3658 24.0019 20.9989 23.6114 21.3895L21.3897 23.6118C20.9992 24.0024 20.366 24.0024 19.9754 23.6119L12.6593 16.2957C12.2687 15.9052 11.6356 15.9052 11.245 16.2957L3.92888 23.6119C3.53832 24.0024 2.90508 24.0024 2.51457 23.6118L0.292813 21.3894C-0.0976061 20.9989 -0.0975807 20.3659 0.292869 19.9754L7.6084 12.659C7.99889 12.2685 7.99887 11.6353 7.60836 11.2448L0.292948 3.92942C-0.0975391 3.53893 -0.0975814 2.90584 0.292853 2.5153L2.51457 0.292988C2.90508 -0.0976258 3.53832 -0.097668 3.92888 0.292893L11.245 7.60905C11.6356 7.99958 12.2687 7.99958 12.6593 7.60905L19.9754 0.292894C20.366 -0.0976677 20.9992 -0.0976254 21.3897 0.292988L23.6114 2.51526Z"
+                            fill="black" />
+                    </svg>
+
+                </a>
+
+                <label class="sign_up-login field_input">
+                    <span>Логин</span>
+                    <input class="login_input" type="text" placeholder="Ваш логин">
+                </label>
+
+                <label class="sign_up-password field_input">
+                    <span>Пароль</span>
+                    <input class="password_input " type="password" placeholder="Ваш пароль">
+                </label>
+
+                <div class="checkbox_btn">
+                    <label class="sign_up-checkbox">
+                        <input class="checkbox_input " type="checkbox">
+                        <span>Я ознакомлен и согласен с условиями Договора-Оферты, даю согласие на обработку
+                            персональных данных согласно политике конфиденциальностии получение писем от 7 Web Traffic
+                            (7WT).</span>
+
+                    </label>
+                    <button class="sign_up-btn button" type="button">Войти</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="regist-modal">
+            <div class="regist-body">
+                <h2 class="regist-title title">Регистрация</h2>
+
+                <a class="regist-cancel" aria-label="Закрыть">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.6114 2.51526C24.0019 2.90582 24.0018 3.53894 23.6113 3.92942L16.2951 11.2448C15.9045 11.6353 15.9045 12.2685 16.295 12.659L23.6113 19.9754C24.0018 20.3658 24.0019 20.9989 23.6114 21.3895L21.3897 23.6118C20.9992 24.0024 20.366 24.0024 19.9754 23.6119L12.6593 16.2957C12.2687 15.9052 11.6356 15.9052 11.245 16.2957L3.92888 23.6119C3.53832 24.0024 2.90508 24.0024 2.51457 23.6118L0.292813 21.3894C-0.0976061 20.9989 -0.0975807 20.3659 0.292869 19.9754L7.6084 12.659C7.99889 12.2685 7.99887 11.6353 7.60836 11.2448L0.292948 3.92942C-0.0975391 3.53893 -0.0975814 2.90584 0.292853 2.5153L2.51457 0.292988C2.90508 -0.0976258 3.53832 -0.097668 3.92888 0.292893L11.245 7.60905C11.6356 7.99958 12.2687 7.99958 12.6593 7.60905L19.9754 0.292894C20.366 -0.0976677 20.9992 -0.0976254 21.3897 0.292988L23.6114 2.51526Z"
+                            fill="black" />
+                    </svg>
+
+                </a>
+
+                <label class="regist-email field_input">
+                    <span>Email</span>
+                    <input class="email_input" type="email" placeholder="Ваш Email">
+                </label>
+                <label class="regist-login field_input">
+                    <span>Логин</span>
+                    <input class="login_input" type="text" placeholder="Ваш логин">
+                </label>
+
+                <label class="regist-password field_input">
+                    <span>Пароль</span>
+                    <input class="password_input" type="password" placeholder="Пароль от 8 символов">
+                </label>
+                <label class="regist-password-repeat field_input">
+                    <span>Пароль</span>
+                    <input class="password_input-repeat" type="password" placeholder="Повторите, чтобы не ошибиться">
+                </label>
+
+                <div class="checkbox_btn-regist">
+                    <label class="regist-checkbox">
+                        <input class="checkbox_input " type="checkbox">
+                        <span>Я ознакомлен и согласен с условиями Договора-Оферты, даю согласие на обработку
+                            персональных данных согласно политике конфиденциальностии получение писем от 7 Web Traffic
+                            (7WT).</span>
+
+                    </label>
+                    <button class="regist-btn button" type="button">Зарегестрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

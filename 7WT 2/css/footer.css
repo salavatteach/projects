@@ -1,0 +1,39 @@
+/*****************footer*****************/
+
+.footer {
+    color: var(--accent-white);
+    background-color: var(--general-black);
+}
+
+.footer_inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px 0 45px 0;
+    align-items: center;
+}
+
+.footer_info {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.footer_tools-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer_tools-item {
+    font-size: 12px;
+    margin: 5px 0 5px 0;
+}
+
+.footer_tools-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer_social,
+.footer_logo {
+    max-width: max-content;
+    margin: 0 auto;
+}
