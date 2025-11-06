@@ -625,16 +625,71 @@ input[type='range']::-moz-range-thumb {
 
 .checkbox_input-group {
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
 
 }
 
 .form-checkbox label {
     display: flex;
     align-items: start;
-    width: 100%;
-    max-width: 500px;
+    max-width: 530px;
     gap: 10px;
+    position: relative;
 }
+
+
+.tooltip {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: var(--general-color);
+    border-radius: 50%;
+    padding: 15px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--general-white);
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+.tooltip span {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;
+    background: var(--general-white);
+    z-index: 10;
+    border: 1px solid var(--general-color);
+    color: var(--general-black);
+    transition: var(--transition);
+}
+
+.tooltip:hover span {
+    opacity: 1;
+    visibility: visible;
+}
+
+.answer_close {
+    display: none;
+    font-family: var(--first-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 16px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
 
 .all_label {
     margin-bottom: 18px;
