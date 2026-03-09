@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Moderustic-VF';
+    src:
+        local('Moderustic-VF'),
+        url(../fonts/Moderustic-VF.woff2) format('woff2'),
+        url(../fonts/Moderustic-VF.woff) format('woff');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabriola';
+    src: local('Gabriola') , local('Gabriola')
+     url(../fonts/Gabriola.woff) format('woff'), 
+     url(../fonts/Gabriola.woff2) format('woff2');
+     font-weight: normal ;
+     font-style: normal;
+     font-display: swap ;
+}
