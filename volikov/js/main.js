@@ -34,3 +34,53 @@ swiper.on('slideChangeTransitionStart', runRing);
 swiper.init?.(); 
 
 runRing();
+
+
+const achievementSlider = new Swiper('.achievement_bottom-slider', {
+  loop: true,
+  slidesPerView: "auto",
+  spaceBetween: 52,
+  speed: 5000,
+
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false
+  }
+});
+
+
+
+const body = document.body;
+const burgerOpen = document.querySelector('.burger_open');
+const headerCenter = document.querySelector('.header_center');
+
+function openMenu() {
+    body.classList.add('menu-open');
+}
+
+function closeMenu() {
+    body.classList.remove('menu-open');
+}
+
+burgerOpen.addEventListener('click', (e) => {
+    e.stopPropagation();
+    openMenu();
+});
+
+document.querySelectorAll('.burger_close, .close_btn').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeMenu();
+    });
+});
+
+document.addEventListener('click', (e) => {
+    if (!body.classList.contains('menu-open')) return;
+
+    if (
+        !headerCenter.contains(e.target) &&
+        !burgerOpen.contains(e.target)
+    ) {
+        closeMenu();
+    }
+});

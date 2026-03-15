@@ -18,15 +18,39 @@
                     <a href="#" class="header_logo">
                         <img src="./img/logo-header.svg" alt="">
                     </a>
-                    <nav class="header_menu">
-                        <ul>
-                            <li>Обо мне</li>
-                            <li>Аутентичный бизнес</li>
-                            <li>Примеры аутентичности</li>
-                            <li>Мероприятия</li>
-                            <li class="current-item">Для кого всё это?</li>
-                        </ul>
-                    </nav>
+                    <div class="header_center">
+                        <button class="burger_close">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M18.3604 7.05029L13.4111 12.0005L18.3604 16.9497L16.9463 18.3638L11.9971 13.4146L7.04688 18.3638L5.63281 16.9497L10.583 12.0005L5.63281 7.05029L7.04688 5.63623L11.9971 10.5864L16.9463 5.63623L18.3604 7.05029Z" fill="#F0EFED" style="fill:#F0EFED;fill:color(display-p3 0.9412 0.9373 0.9294);fill-opacity:1;"/>
+                            </svg>
+                        </button>
+                        <nav class="header_menu">
+                            <ul>
+                                <li>Обо мне</li>
+                                <li>Аутентичный бизнес</li>
+                                <li>Примеры аутентичности</li>
+                                <li>Мероприятия</li>
+                                <li class="current-item">Для кого всё это?</li>
+                            </ul>
+                        </nav>
+                        <div class="button_container">
+                            <a href="#" class="light_btn">
+                                <span>Попасть на вебинар</span>
+                            </a>
+                            <button class="dark_btn close_btn">
+                                <span>Закрыть</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="burger_open">
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </header>
@@ -116,18 +140,20 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="achievement_bottom-list flex_inner pre_text">
-                    <li>ISO 22000</li>
-                    <li>GMP</li>
-                    <li>HACCP</li>
-                    <li>30 лет</li>
-                    <li>62 страны</li>
-                    <li>50 наград</li>
-                    <li>24 450 м2 владений</li>
-                    <li>20 языков</li>
-                    <li>Критерии устойчивого развития ООН</li>
-                    <li>Более 500 уникальных формул</li>
-                </ul>
+                <div class="achievement_bottom-slider swiper">
+                    <ul class="achievement_bottom-list swiper-wrapper flex_inner pre_text">
+                        <li class="swiper-slide">ISO 22000</li>
+                        <li class="swiper-slide">GMP</li>
+                        <li class="swiper-slide">HACCP</li>
+                        <li class="swiper-slide">30 лет</li>
+                        <li class="swiper-slide">62 страны</li>
+                        <li class="swiper-slide">50 наград</li>
+                        <li class="swiper-slide">24 450 м2 владений</li>
+                        <li class="swiper-slide">20 языков</li>
+                        <li class="swiper-slide">Критерии устойчивого развития ООН</li>
+                        <li class="swiper-slide">Более 500 уникальных формул</li>
+                    </ul>
+                </div>
             </section>
             <section class="about-block" style="background: url(./bg/about-bg.webp) center center / contain no-repeat #F0EFED;">
                 <div class="container">
@@ -161,14 +187,14 @@
             <section class="vision-block">
                 <div class="container">
                     <div class="vision_inner dark">
-                        <div class="vision_quote pre_text">
-                            Я столько лет вижу одно и тоже
-                        </div>
                         <div class="vision_slider swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="vision_card flex_inner">
                                         <div class="vision_left flex_column dark">
+                                            <div class="vision_quote pre_text">
+                                                Я столько лет вижу одно и тоже
+                                            </div>
                                             <h2 class="vision_title italic dark">
                                                 Бизнес работает,
                                                 <br>
@@ -254,6 +280,9 @@
                                 <div class="swiper-slide">
                                     <div class="vision_card flex_inner">
                                         <div class="vision_left flex_column dark">
+                                            <div class="vision_quote pre_text">
+                                                Я столько лет вижу одно и тоже
+                                            </div>
                                             <h2 class="vision_title italic dark">
                                                 Бизнес работает,
                                                 <br>
@@ -339,6 +368,9 @@
                                 <div class="swiper-slide">
                                     <div class="vision_card flex_inner">
                                         <div class="vision_left flex_column dark">
+                                            <div class="vision_quote pre_text">
+                                                Я столько лет вижу одно и тоже
+                                            </div>
                                             <h2 class="vision_title italic dark">
                                                 Бизнес работает,
                                                 <br>
@@ -481,24 +513,29 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="authentic_center-img">
+                            <img src="./img/authentic_center-img.webp" alt="">
+                        </div>
                         <div class="authentic_bottom flex_column">
                             <a href="#" class="social_btn flex_inner">
                                 <span class="social_btn-text"> Больше об аутентичном бизнесе</span>
-                                <span class="social_btn-tg">
-                                    <img src="./icon/Telegram.webp" alt="">
-                                    Telegram
-                                </span>
-                                <span class="social_btn-icon">
-                                    <svg
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path d="M20 12L12.2217 19.7783L10.8076 18.3643L16.1719 13H4V11H16.1719L10.8076 5.63574L12.2217 4.22168L20 12Z" fill="#F0EFED" style="fill:#F0EFED;fill:color(display-p3 0.9412 0.9373 0.9294);fill-opacity:1;"/>
-                                    </svg>
-                                </span>
+                                <div class="social_btn-content">
+                                    <span class="social_btn-tg">
+                                        <img src="./icon/Telegram.webp" alt="">
+                                        Telegram
+                                    </span>
+                                    <span class="social_btn-icon">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path d="M20 12L12.2217 19.7783L10.8076 18.3643L16.1719 13H4V11H16.1719L10.8076 5.63574L12.2217 4.22168L20 12Z" fill="#F0EFED" style="fill:#F0EFED;fill:color(display-p3 0.9412 0.9373 0.9294);fill-opacity:1;"/>
+                                        </svg>
+                                    </span>
+                                </div>
                             </a>
                             <div class="webinar_block flex_inner">
                                 <p class="webinar_text">
@@ -762,7 +799,7 @@
                     </div>
                 </div>
             </section>
-            <section class="hero-block">
+            <section class="hero-block hero-block-nth">
                 <div class="container">
                     <div class="hero_inner flex_inner">
                         <div class="hero_inner-left flex_column">
@@ -857,7 +894,8 @@
                 <div class="footer_top flex_inner">
                     <div class="develop-wrap">
                         <img src="./icon/ic-daurnel.webp" alt="">
-                        Создано <a>daurenel.com</a>
+                        Создано
+                        <a>daurenel.com</a>
                     </div>
                     <span></span>
                     <ul class="social-list flex_inner">
@@ -900,4 +938,3 @@
         <script src="./js/main.js"></script>
     </body>
 </html>
-

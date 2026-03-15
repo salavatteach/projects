@@ -135,6 +135,7 @@ h2.normal {
     height: 56px;
     background: linear-gradient(0deg, #000 0%, #0a133d 100%);
     overflow: hidden;
+    text-align: center;
 }
 
 .dark_btn>* {
@@ -188,6 +189,7 @@ h2.normal {
     color: var(--typography-black-primary);
     background: linear-gradient(0deg, #f0efed 0%, #fff 100%);
     height: 56px;
+    text-align: center;
 }
 
 
@@ -255,7 +257,7 @@ h2.normal {
 }
 
 
-.grid_container{
+.grid_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -264,6 +266,7 @@ h2.normal {
     display: flex;
     align-items: start;
     gap: 16px;
+    flex-shrink: 0;
 }
 
 
@@ -280,9 +283,9 @@ h2.normal {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 18px;
-    backdrop-filter: blur(10px);
+    padding: 20px;
     z-index: 99;
+
 }
 
 .header_inner {
@@ -305,4 +308,55 @@ h2.normal {
 
 .current-item {
     color: var(--typography-white-primary);
+}
+
+
+.header_center {}
+
+.burger_close {
+    display: none;
+    background: transparent;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.current-item {}
+
+.header_center .button_container {
+    display: none;
+}
+
+.burger_open {
+    display: none;
+    padding: 10px 5px;
+    background: transparent;
+    width: auto;
+}
+
+.burger_open span {
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: var(--typography-white-absolute);
+}
+
+.burger_open span::after,
+.burger_open span::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: var(--typography-white-absolute);
+
+}
+
+.burger_open span::after {
+    top: -5px;
+}
+
+.burger_open span::before {
+    bottom: -5px;
 }
