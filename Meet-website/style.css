@@ -356,6 +356,14 @@ img {
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all .2s;
+
+}
+
+.card:hover{
+  transform: scale(1.05);
 }
 
 .card_vip {
