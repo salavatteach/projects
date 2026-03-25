@@ -1,497 +1,439 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
-        <title>Directory Listing Page</title>
+        <title>Girls4Call</title>
     </head>
     <body>
-        <div class="page">
-            <header class="topbar">
-                <div class="topbar_inner">
-                    <div class="topbar_actions">
-                        <a href="#">Contact</a>
-                        <a href="#">Create account</a>
-                    </div>
-                    <form class="topbar_login">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                        <button type="submit">LOGIN</button>
-                    </form>
-                    <a href="#">Remind password</a>
-                    <a href="#">EN</a>
-                </div>
-            </header>
-            <div class="layout">
-                <aside class="sidebar_left">
-                    <div class="sidebar_logo">
-                        <div class="sidebar_logo-title">
-                            Euro
-                            <br>Girls
-                            <br>Escort
-                            <span class="sidebar_logo-accent">.com</span>
+        <header class="site-top">
+            <div class="container">
+                <div class="site-top__inner">
+                    <div class="logo-wrap">
+                        <div class="logo">GIRLS4CALL</div>
+                        <div class="logo-sub">
+                            Best Rated Directory
+                            <br>
+                            With 3000+ Girls
                         </div>
                     </div>
-                    <div class="sidebar_search">
-                        <form class="sidebar_search-form">
-                            <input type="text" placeholder="Search">
-                            <button type="submit">🔍</button>
-                        </form>
+                    <div class="top-right">
+                        <div class="login-box">
+                            <div class="login-row">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <div class="login-row">
+                                <a href="#" class="forgot-link">Forgot password?</a>
+                                <button class="login-btn">Login</button>
+                            </div>
+                        </div>
+                        <a href="#" class="top-banner">
+                            <img src="./img/top-banner.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="sidebar_group-title">Europe</div>
-                    <ul class="country_list">
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Albania</span>
-                            <span class="country_count">(1172)</span>
+                </div>
+            </div>
+        </header>
+        <nav class="nav-bar">
+            <div class="container">
+                <div class="nav-bar__inner">
+                    <ul class="nav-menu">
+                        <li class="active">
+                            <a href="#">All girls</a>
                         </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Andorra</span>
-                            <span class="country_count">(16)</span>
+                        <li>
+                            <a href="#">Fresh!</a>
                         </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Armenia</span>
-                            <span class="country_count">(921)</span>
+                        <li>
+                            <a href="#">TOP-20</a>
                         </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Austria</span>
-                            <span class="country_count">(1303)</span>
+                        <li>
+                            <a href="#">Verified</a>
                         </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Belarus</span>
-                            <span class="country_count">(600)</span>
+                        <li>
+                            <a href="#">Independent</a>
                         </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Belgium</span>
-                            <span class="country_count">(1131)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Bulgaria</span>
-                            <span class="country_count">(781)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Croatia</span>
-                            <span class="country_count">(2028)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Cyprus</span>
-                            <span class="country_count">(726)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Czech Republic</span>
-                            <span class="country_count">(1034)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Denmark</span>
-                            <span class="country_count">(325)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Estonia</span>
-                            <span class="country_count">(268)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Finland</span>
-                            <span class="country_count">(411)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> France</span>
-                            <span class="country_count">(4759)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Germany</span>
-                            <span class="country_count">(10706)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Greece</span>
-                            <span class="country_count">(973)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Hungary</span>
-                            <span class="country_count">(851)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Ireland</span>
-                            <span class="country_count">(242)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Italy</span>
-                            <span class="country_count">(4101)</span>
-                        </li>
-                        <li class="country_item">
-                            <span class="country_name">
-                                <span class="country_flag"></span> Latvia</span>
-                            <span class="country_count">(327)</span>
+                        <li>
+                            <a href="#">Agencies</a>
                         </li>
                     </ul>
-                </aside>
-                <main class="content">
-                    <nav class="mainnav">
-                        <ul class="mainnav_list">
-                            <li>
-                                <a class="mainnav_link active" href="#">VIP Listings</a>
-                            </li>
-                            <li>
-                                <a class="mainnav_link" href="#">Girls</a>
-                            </li>
-                            <li>
-                                <a class="mainnav_link" href="#">Agencies</a>
-                            </li>
-                            <li>
-                                <a class="mainnav_link" href="#">City Tour</a>
-                            </li>
-                            <li>
-                                <a class="mainnav_link" href="#">Videos</a>
-                            </li>
-                            <li>
-                                <a class="mainnav_link" href="#">FAQ</a>
-                            </li>
-                            <li>
-                                <a class="mainnav_link" href="#">Advertise</a>
-                            </li>
-                            <li>
-                                <a class="mainnav_link" href="#">Reviews</a>
-                            </li>
-                            <li>
-                                <a class="mainnav_link" href="#">Blacklist</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="content_inner">
-                        <h1 class="page_title">VIP ESCORTS</h1>
-                        <div class="quick_tags">
-                            <a class="quick_tag" href="#">Sex Cams</a>
-                            <a class="quick_tag" href="#">Meet & Fuck</a>
-                            <a class="quick_tag" href="#">Live Sex</a>
-                            <a class="quick_tag" href="#">Escorts Now</a>
-                            <a class="quick_tag" href="#">Live Escorts</a>
-                        </div>
-                        <div class="hero_banners">
-                            <a href="#" class="hero_banner">
-                                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200&auto=format&fit=crop" alt="">
-                            </a>
-                            <a href="#" class="hero_banner">
-                                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200&auto=format&fit=crop" alt="">
-                            </a>
-                            <a href="#" class="hero_banner">
-                                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop" alt="">
-                            </a>
-                        </div>
-                        <div class="filters">
-                            <select class="filter_select">
-                                <option>Age</option>
-                            </select>
-                            <select class="filter_select">
-                                <option>Hair</option>
-                            </select>
-                            <select class="filter_select">
-                                <option>Rates</option>
-                            </select>
-                            <select class="filter_select">
-                                <option>Breast</option>
-                            </select>
-                            <select class="filter_select">
-                                <option>Travel</option>
-                            </select>
-                            <select class="filter_select">
-                                <option>Weight</option>
-                            </select>
-                            <select class="filter_select">
-                                <option>Height</option>
-                            </select>
-                            <select class="filter_select">
-                                <option>Services</option>
-                            </select>
-                            <select class="filter_select">
-                                <option>Languages</option>
-                            </select>
-                            <select class="filter_select">
-                                <option>Preferences</option>
-                            </select>
-                        </div>
-                        <div class="badges_row">
-                            <span class="filter_badge">
-                                <i></i> WITH REVIEWS
-                            </span>
-                            <span class="filter_badge">
-                                <i></i> VERIFIED
-                            </span>
-                            <span class="filter_badge">
-                                <i></i> NEWCOMERS
-                            </span>
-                            <span class="filter_badge">
-                                <i></i> WITH VIDEOS
-                            </span>
-                            <span class="filter_badge">
-                                <i></i> INDEPENDENT
-                            </span>
-                            <span class="filter_badge">
-                                <i></i> SEEN LAST WEEK
-                            </span>
-                            <span class="filter_badge">
-                                <i></i> COUPLE
-                            </span>
-                        </div>
-                        <section class="cards_grid">
-                            <article class="card">
-                                <span class="card_vip">VIP</span>
-                                <div class="card_image-wrap">
-                                    <div class="card_stickers">
-                                        <span class="sticker red">New</span>
-                                        <span class="sticker blue">Video</span>
-                                    </div>
-                                    <img class="card_image" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=900&auto=format&fit=crop" alt="">
-                                    <span class="card_verified">Verified</span>
-                                </div>
-                                <div class="card_body">
-                                    <h2 class="card_name">Beatriz</h2>
-                                    <div class="card_city">Escorts Ibiza</div>
-                                    <div class="card_meta">Independent · Premium Listing</div>
-                                </div>
-                            </article>
-                            <article class="card">
-                                <span class="card_vip">VIP</span>
-                                <div class="card_image-wrap">
-                                    <div class="card_stickers">
-                                        <span class="sticker purple">Independent</span>
-                                        <span class="sticker blue">Video</span>
-                                        <span class="sticker green">Review</span>
-                                    </div>
-                                    <img class="card_image" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=900&auto=format&fit=crop" alt="">
-                                    <span class="card_verified">Verified</span>
-                                </div>
-                                <div class="card_body">
-                                    <h2 class="card_name">Melissa</h2>
-                                    <div class="card_city">Escorts Istanbul</div>
-                                    <div class="card_meta">Top profile · Featured placement</div>
-                                </div>
-                            </article>
-                            <article class="card">
-                                <span class="card_vip">VIP</span>
-                                <div class="card_image-wrap">
-                                    <div class="card_stickers">
-                                        <span class="sticker purple">Independent</span>
-                                        <span class="sticker blue">Video</span>
-                                    </div>
-                                    <img class="card_image" src="https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?q=80&w=900&auto=format&fit=crop" alt="">
-                                    <span class="card_verified">Verified</span>
-                                </div>
-                                <div class="card_body">
-                                    <h2 class="card_name">Kris</h2>
-                                    <div class="card_city">Escorts Yerevan</div>
-                                    <div class="card_meta">Verified · Available today</div>
-                                </div>
-                            </article>
-                            <article class="card">
-                                <span class="card_vip">VIP</span>
-                                <div class="card_image-wrap">
-                                    <div class="card_stickers">
-                                        <span class="sticker purple">Independent</span>
-                                    </div>
-                                    <img class="card_image" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=900&auto=format&fit=crop" alt="">
-                                </div>
-                                <div class="card_body">
-                                    <h2 class="card_name">Helena</h2>
-                                    <div class="card_city">Escorts Malaga</div>
-                                    <div class="card_meta">Premium card · City listing</div>
-                                </div>
-                            </article>
-                            <article class="card">
-                                <span class="card_vip">VIP</span>
-                                <div class="card_image-wrap">
-                                    <div class="card_stickers">
-                                        <span class="sticker purple">Independent</span>
-                                    </div>
-                                    <img class="card_image" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?q=80&w=900&auto=format&fit=crop" alt="">
-                                    <span class="card_verified">Verified</span>
-                                </div>
-                                <div class="card_body">
-                                    <h2 class="card_name">Angel</h2>
-                                    <div class="card_city">Escorts Dubai</div>
-                                    <div class="card_meta">Agency promoted profile</div>
-                                </div>
-                            </article>
-                            <article class="card">
-                                <span class="card_vip">VIP</span>
-                                <div class="card_image-wrap">
-                                    <div class="card_stickers">
-                                        <span class="sticker purple">Independent</span>
-                                        <span class="sticker blue">Video</span>
-                                        <span class="sticker green">Review</span>
-                                    </div>
-                                    <img class="card_image" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=900&auto=format&fit=crop" alt="">
-                                </div>
-                                <div class="card_body">
-                                    <h2 class="card_name">Scarlet</h2>
-                                    <div class="card_city">Escorts Rome</div>
-                                    <div class="card_meta">Top ranking placement</div>
-                                </div>
-                            </article>
-                            <article class="card">
-                                <span class="card_vip">VIP</span>
-                                <div class="card_image-wrap">
-                                    <div class="card_stickers">
-                                        <span class="sticker red">New</span>
-                                        <span class="sticker blue">Video</span>
-                                    </div>
-                                    <img class="card_image" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=900&auto=format&fit=crop" alt="">
-                                </div>
-                                <div class="card_body">
-                                    <h2 class="card_name">Olessya</h2>
-                                    <div class="card_city">Escorts Prague</div>
-                                    <div class="card_meta">Fresh listing · Premium visibility</div>
-                                </div>
-                            </article>
-                            <article class="card">
-                                <span class="card_vip">VIP</span>
-                                <div class="card_image-wrap">
-                                    <div class="card_stickers">
-                                        <span class="sticker purple">Independent</span>
-                                        <span class="sticker green">Review</span>
-                                    </div>
-                                    <img class="card_image" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=900&auto=format&fit=crop" alt="">
-                                </div>
-                                <div class="card_body">
-                                    <h2 class="card_name">Valentina</h2>
-                                    <div class="card_city">Escorts Warsaw</div>
-                                    <div class="card_meta">Exclusive city agency</div>
-                                </div>
-                            </article>
-                        </section>
-                        <div class="pagination">
-                            <a class="active" href="#">1</a>
-                            <a href="#">2</a>
-                            <span>...</span>
-                            <a href="#">4</a>
-                            <span>...</span>
-                            <a href="#">6</a>
-                            <a class="active" href="#">›</a>
-                        </div>
-                        <section class="seo_section">
-                            <h2 class="seo_title">About</h2>
-                            <div class="seo_columns">
-                                <div class="seo_text">
-                                    <p>
-                                        This directory page is designed as a large classified listing hub with categories,
-                  featured placements, promoted cards and banner advertising blocks. The structure is
-                  ideal for SEO landing pages with a lot of directory content.
-                                    </p>
-                                    <p>
-                                        Each profile card can represent a listing, company, agency or business page. Paid
-                  status can move cards higher in the grid, while banners can be shown in fixed
-                  positions on the right side and in hero sections above the catalog.
-                                    </p>
-                                </div>
-                                <div class="seo_text">
-                                    <p>
-                                        The filter area supports category sorting, custom attributes, premium marks,
-                  quick tags and checkbox-style flags. This allows you to build dynamic archive pages
-                  and large city-based directories with custom ranking logic.
-                                    </p>
-                                    <p>
-                                        You can connect WordPress custom post types, ACF fields, taxonomies and your own
-                  promotion system to control top positions, active packages, banner visibility and
-                  featured labels.
-                                    </p>
-                                </div>
-                                <div class="seo_text">
-                                    <p>
-                                        The lower text section works as a strong SEO block for category descriptions,
-                  city descriptions, internal links and AI-generated paragraphs. It is also suitable
-                  for FAQ snippets, trust texts and long-form content.
-                                    </p>
-                                    <p>
-                                        This layout is especially useful for projects where the main goal is directory
-                  visibility, monetized placements, banner sales and content scaling across many
-                  categories and geo pages.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="seo_links">
-                                <a href="#">Dubai Listings</a>
-                                <a href="#">London Directory</a>
-                                <a href="#">Agencies</a>
-                                <a href="#">VIP Profiles</a>
-                                <a href="#">Featured Businesses</a>
-                                <a href="#">Premium Placement</a>
-                                <a href="#">Top Pages</a>
-                                <a href="#">New Listings</a>
-                                <a href="#">City Directory</a>
-                                <a href="#">Agency Profiles</a>
-                                <a href="#">SEO Pages</a>
-                                <a href="#">Directory Reviews</a>
-                            </div>
-                        </section>
-                    </div>
-                </main>
-                <aside class="sidebar_right">
-                    <div class="ad_column">
-                        <a href="#" class="ad_box tall">
-                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=900&auto=format&fit=crop" alt="">
-                        </a>
-                        <a href="#" class="ad_box">
-                            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=900&auto=format&fit=crop" alt="">
-                        </a>
-                        <a href="#" class="ad_box">
-                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=900&auto=format&fit=crop" alt="">
-                        </a>
-                        <a href="#" class="ad_box">
-                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=900&auto=format&fit=crop" alt="">
-                        </a>
-                    </div>
-                </aside>
-            </div>
-            <footer class="footer">
-                <div class="footer_inner">
-                    <div class="footer_brand">
-                        <div class="footer_brand-title">
-                            Euro
-                            <br>Girls
-                            <br>Escort
-                            <span class="sidebar_logo-accent">.com</span>
-                        </div>
-                    </div>
-                    <div class="footer_nav-wrap">
-                        <div class="footer_nav">
-                            <a href="#">VIP Escorts</a>
-                            <a href="#">Girls</a>
-                            <a href="#">Massages</a>
-                            <a href="#">Agencies</a>
-                            <a href="#">Videos</a>
-                            <a href="#">FAQ</a>
-                            <a href="#">Advertise</a>
-                            <a href="#">Reviews</a>
-                            <a href="#">Contact</a>
-                            <a href="#">Terms & Privacy</a>
-                            <a href="#">Directory</a>
-                            <a href="#">Affiliate</a>
-                        </div>
-                        <div class="footer_copy">
-                            This website layout is made as a classified directory style template with filters,
-            premium listings, side banners and large SEO text blocks. It can be adapted under
-            WordPress using custom post types, ACF fields, taxonomies and custom archive templates.
-                        </div>
-                    </div>
+                    <a href="#" class="nav-search">⌕</a>
                 </div>
-            </footer>
+            </div>
+        </nav>
+        <div class="mobile-head">
+            <div class="mobile-head__top">
+                <div class="mobile-logo">GIRLS4CALL</div>
+            </div>
+            <div class="mobile-head__bar">
+                <button class="burger">☰</button>
+                <a href="#" class="mobile-buy-btn">Buy Banner AD</a>
+                <a href="#" class="mobile-user">👤</a>
+            </div>
+            <div class="mobile-subbar">
+                <a href="#">🇨🇦 Canada ▼</a>
+                <a href="#">Choose city ▼</a>
+            </div>
         </div>
+        <main class="page">
+            <div class="container">
+                <div class="layout">
+                    <div class="content">
+                        <section class="cities-box">
+                            <div class="cities-top">🇨🇦 Canada ▼</div>
+                            <div class="cities-grid">
+                                <div class="city-col">
+                                    <h4>Most popular cities:</h4>
+                                    <ul class="city-list">
+                                        <li>
+                                            <a href="#">Halifax (1)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Calgary (73)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Edmonton (182)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ottawa (25)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Calgary (73)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="city-col">
+                                    <h4>Vancouver (45)</h4>
+                                    <ul class="city-list">
+                                        <li>
+                                            <a href="#">Halifax (1)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Calgary (73)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Edmonton (182)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ottawa (25)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Calgary (73)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="city-col">
+                                    <h4>Ottawa (25)</h4>
+                                    <ul class="city-list">
+                                        <li>
+                                            <a href="#">Halifax (1)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Calgary (73)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Edmonton (182)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ottawa (25)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Calgary (73)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="city-col">
+                                    <h4>Calgary (73)</h4>
+                                    <ul class="city-list">
+                                        <li>
+                                            <a href="#">Halifax (1)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Calgary (73)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Edmonton (182)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ottawa (25)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Calgary (73)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="filters">
+                            <a href="#" class="filters__toggle">Show filters ▼</a>
+                            <label>
+                                <input type="checkbox" checked>
+                                <span>With reviews</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Is online now</span>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Has natural pic</span>
+                            </label>
+                        </div>
+                        <section class="cards-grid">
+                            <article class="escort-card escort-card--day escort-card--vip">
+                                <div class="card-label-head">Girl of the day</div>
+                                <div class="card-label-top">VIP</div>
+                                <a href="#" class="card-media">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=900&auto=format&fit=crop" alt="">
+                                    <span class="card-badge">VERIFIED</span>
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="card-title">Ruslana_v_Paris</a>
+                                    <div class="card-location">France, Paris</div>
+                                </div>
+                            </article>
+                            <article class="escort-card escort-card--vip">
+                                <div class="card-label-top">VIP</div>
+                                <a href="#" class="card-media">
+                                    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=900&auto=format&fit=crop" alt="">
+                                    <span class="card-badge">VERIFIED</span>
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="card-title">Ruslana_v_Paris</a>
+                                    <div class="card-location">France, Paris</div>
+                                </div>
+                            </article>
+                            <article class="escort-card escort-card--vip">
+                                <div class="card-label-top">VIP</div>
+                                <a href="#" class="card-media">
+                                    <img src="https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?q=80&w=900&auto=format&fit=crop" alt="">
+                                    <span class="card-badge">VERIFIED</span>
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="card-title">Ruslana_v_Paris</a>
+                                    <div class="card-location">France, Paris</div>
+                                </div>
+                            </article>
+                            <article class="escort-card escort-card--vip">
+                                <div class="card-label-top">VIP</div>
+                                <a href="#" class="card-media">
+                                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=900&auto=format&fit=crop" alt="">
+                                    <span class="card-badge">VERIFIED</span>
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="card-title">Ruslana_v_Paris</a>
+                                    <div class="card-location">France, Paris</div>
+                                </div>
+                            </article>
+                            <article class="escort-card">
+                                <a href="#" class="card-media">
+                                    <img src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?q=80&w=900&auto=format&fit=crop" alt="">
+                                    <span class="card-badge">VERIFIED</span>
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="card-title">Ruslana_v_Paris</a>
+                                    <div class="card-location">France, Paris</div>
+                                </div>
+                            </article>
+                            <article class="escort-card">
+                                <a href="#" class="card-media">
+                                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=900&auto=format&fit=crop" alt="">
+                                    <span class="card-badge">VERIFIED</span>
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="card-title">Ruslana_v_Paris</a>
+                                    <div class="card-location">France, Paris</div>
+                                </div>
+                            </article>
+                            <article class="escort-card">
+                                <a href="#" class="card-media">
+                                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=900&auto=format&fit=crop" alt="">
+                                    <span class="card-badge">VERIFIED</span>
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="card-title">Ruslana_v_Paris</a>
+                                    <div class="card-location">France, Paris</div>
+                                </div>
+                            </article>
+                            <article class="escort-card">
+                                <a href="#" class="card-media">
+                                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=900&auto=format&fit=crop" alt="">
+                                    <span class="card-badge">VERIFIED</span>
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="card-title">Ruslana_v_Paris</a>
+                                    <div class="card-location">France, Paris</div>
+                                </div>
+                            </article>
+                            <article class="escort-card">
+                                <a href="#" class="card-media">
+                                    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=900&auto=format&fit=crop" alt="">
+                                    <span class="card-badge">VERIFIED</span>
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="card-title">Ruslana_v_Paris</a>
+                                    <div class="card-location">France, Paris</div>
+                                </div>
+                            </article>
+                            <article class="escort-card">
+                                <a href="#" class="card-media">
+                                    <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=900&auto=format&fit=crop" alt="">
+                                    <span class="card-badge">VERIFIED</span>
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="card-title">Ruslana_v_Paris</a>
+                                    <div class="card-location">France, Paris</div>
+                                </div>
+                            </article>
+                            <article class="escort-card">
+                                <a href="#" class="card-media">
+                                    <img src="https://images.unsplash.com/photo-1502767089025-6572583495b0?q=80&w=900&auto=format&fit=crop" alt="">
+                                    <span class="card-badge">VERIFIED</span>
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="card-title">Ruslana_v_Paris</a>
+                                    <div class="card-location">France, Paris</div>
+                                </div>
+                            </article>
+                            <article class="escort-card">
+                                <a href="#" class="card-media">
+                                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=900&auto=format&fit=crop" alt="">
+                                    <span class="card-badge">VERIFIED</span>
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="card-title">Ruslana_v_Paris</a>
+                                    <div class="card-location">France, Paris</div>
+                                </div>
+                            </article>
+                        </section>
+                        <div class="load-more-wrap">
+                            <a href="#" class="load-more">Load more</a>
+                        </div>
+                        <section class="seo-block">
+                            <h2>Best Escorts in Canada</h2>
+                            <p>
+                                Any reproduction, adaptation, translation, distribution, sale, resale, download, use of all or part of this site on any medium is strictly prohibited and may result in civil and/or criminal responsible. Site users can upload content that they own the rights. The reproduction, use, content loading infringing copyright is strictly prohibited and may result in civil and/or criminal responsible. Reserves the right to suspend the accounts and to pursue by all legal means anyone who does not respect these prohibitions.
+                            </p>
+                            <div class="trust-logos">
+                                <img src="./img/logo-1.png" alt="">
+                                <img src="./img/logo-2.png" alt="">
+                                <img src="./img/logo-3.png" alt="">
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="sidebar">
+                        <div class="side-box">
+                            <div class="side-title">Available for 1-1 Chat: 2</div>
+                            <div class="side-body" style="text-align:center;">
+                                <div style="font-size:13px; line-height:1.7; color:#6a4aa3; margin-bottom:14px;">
+                                    Cherie
+                                    <br>
+                                    Adriana
+                                    <br>
+                                    ANTONIA
+                                </div>
+                                <a href="#" class="green-btn">SEE THEM ALL</a>
+                            </div>
+                        </div>
+                        <div class="side-box">
+                            <div class="side-title">Girl of the month</div>
+                            <div class="side-body">
+                                <a href="#" class="side-mini-card">
+                                    <img src="./img/sidebar-1.jpg" alt="">
+                                    <span class="side-mini-name">Ruslana_v_Paris</span>
+                                    <div class="side-mini-meta">
+                                        Age: 25
+                                        <br>
+                                        City: Paris
+                                    </div>
+                                </a>
+                                <div style="margin-top:12px;">
+                                    <a href="#" class="pink-btn" style="width:100%;">SEE MY CARD</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side-box">
+                            <div class="side-title">Premium Escorts</div>
+                            <div class="side-body">
+                                <div class="premium-list">
+                                    <a href="#" class="premium-item">
+                                        <img src="./img/sidebar-2.jpg" alt="">
+                                        <span class="side-mini-name">Ruslana_v_Paris</span>
+                                        <div class="side-mini-meta">France, Paris</div>
+                                    </a>
+                                    <a href="#" class="premium-item">
+                                        <img src="./img/sidebar-3.jpg" alt="">
+                                        <span class="side-mini-name">Ruslana_v_Paris</span>
+                                        <div class="side-mini-meta">France, Paris</div>
+                                    </a>
+                                    <a href="#" class="premium-item">
+                                        <img src="./img/sidebar-4.jpg" alt="">
+                                        <span class="side-mini-name">Ruslana_v_Paris</span>
+                                        <div class="side-mini-meta">France, Paris</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side-box ad-banner">
+                            <div class="side-body">
+                                <img src="./img/sidebar-ad.jpg" alt="">
+                                <div style="margin-top:12px;">
+                                    <a href="#" class="pink-btn" style="width:100%;">Buy Banner AD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="bottom-register">
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer-logo">GIRLS4CALL</div>
+                    <div class="footer-links">
+                        <a href="#">Links</a>
+                        <span>|</span>
+                        <a href="#">Countries and cities</a>
+                        <span>|</span>
+                        <a href="#">Privacy policy</a>
+                        <span>|</span>
+                        <a href="#">Terms of use</a>
+                        <span>|</span>
+                        <a href="#">Disclaimer</a>
+                    </div>
+                    <div class="footer-copy">Dream-Datings.com © 2012 All Rights Reserved</div>
+                </div>
+            </div>
+        </footer>
+        <div class="floating-tools">
+            <a href="#" class="floating-tools__item floating-tools__item--green">💬</a>
+            <a href="#" class="floating-tools__item floating-tools__item--purple">⚙</a>
+        </div>
+        <button class="to-top" id="toTop">↑</button>
+        <script>
+    (function () {
+      const toTop = document.getElementById('toTop');
+
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 500) {
+          toTop.classList.add('show');
+        } else {
+          toTop.classList.remove('show');
+        }
+      });
+
+      toTop.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    })();
+        </script>
     </body>
 </html>
