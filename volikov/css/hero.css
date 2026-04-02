@@ -668,6 +668,7 @@
 .example_content {
     width: 100%;
     overflow: hidden;
+    gap: 24px;
 }
 
 .example_card {
@@ -681,7 +682,7 @@
     letter-spacing: 0.01em;
 }
 
-.example_item {
+.example_card {
     background: var(--background-w-block);
     border-radius: 32px;
 }
